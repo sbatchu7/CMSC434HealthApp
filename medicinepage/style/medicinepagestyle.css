@@ -1,0 +1,63 @@
+/* Size the phone size box */
+/* Style the phonesize. */
+.box {
+    width: 25%;
+    height: 80%;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    height:10%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Navbar links */
+.item {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+.icon {
+    width: 100%;
+    height: 40%;
+    font-size: 27px;
+    text-align: center;
+    padding-top: 10%;
+    color: gray;
+}
+
+.name {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 17px;
+    color: gray;
+}
+
+/* Navbar links on mouse-over */
+.navbar .item:hover .icon {
+    color: white;
+    cursor: pointer;
+}
+.navbar .item:hover .name {
+    color: white;
+    cursor: pointer;
+}
+
+/* Current/active navbar link */
+.active .icon {
+    color: white;
+}
+
+.active .name {
+    color: white;
+}
