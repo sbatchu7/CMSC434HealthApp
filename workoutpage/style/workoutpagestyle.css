@@ -61,3 +61,10 @@
 .active .name {
     color: white;
 }
+
+#difficulty_chooser {
+    color: red;
+    position:  relative;
+    left: 10%;
+    top: 30%;
+}

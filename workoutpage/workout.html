@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="style/workoutpagestyle.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -34,6 +35,16 @@
                     </div>
                 </a>
             </div>
+            <div id = "difficulty_chooser">
+                <p>Choose the Level Of Difficulty for your Training:</p>
+                <input name="choices" type="radio" id="Easy">Easy
+                <input name="choices" type="radio" id="Moderate">Moderate
+                <input name="choices" type="radio" id="Advanced">Advanced
+                <br><button onclick="chooser_fn()">Choose</button>
+
+            </div>
+            
         </div>
+        
     </body>
 </html>
