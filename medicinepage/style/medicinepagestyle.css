@@ -3,7 +3,7 @@
 .box {
     width: 22%;
     height: 80%;
-    background-color: black;
+    background-color: rgb(109, 192, 188);
     margin: 0 auto;
     position: relative;
 }
@@ -40,7 +40,7 @@
     text-align: center;
     font-family: 'Oswald';
     font-size: 17px;
-    color: gray;
+    color: #363535;
 }
 
 /* Navbar links on mouse-over */
@@ -61,3 +61,152 @@
 .active .name {
     color: white;
 }
+
+.container {
+    height: 19%;
+    position: relative;
+    text-align: center;
+    color: #363535;
+}
+
+.title {
+    position: absolute;
+    color: black;
+    font-size: 35px;
+    font-family: 'Trebuchet MS';
+    top: 10px;
+    left: 16px;
+}
+
+.reminder {
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+    color: gray;
+    text-align: left;
+    padding-left: 8px;
+}
+
+.home_icon {
+    position: absolute;
+    top: 16px;
+    right: 8px;
+    float: right;
+    width: auto;
+    height: 50%;
+    font-size: 35px;
+}
+
+.back_image {
+    width: 100%;
+    height: 9%;
+    
+    opacity: 0.3;
+    color: white;
+}
+.scroll {
+    height: 81%;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 80px;
+    font-family: 'Oswald';
+    color: #363535;
+    
+    overflow-y: scroll;
+    /* position: absolute; */
+}
+
+.weeklyBox {
+    width: 40px;
+    height: 60px;
+    background-color: rgb(109, 192, 188);
+    margin: 5;
+    font-family: 'Trebuchet MS';
+    
+}
+
+.scrollmenu {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    font-family: 'Trebuchet MS';
+    padding: 10px 15px;
+    
+  }
+
+  .Mon {
+    background-color: white;
+  }
+  .Mon:hover {
+    background-color: rgb(109, 192, 188);
+  }
+  .Mon:focus {
+    background-color: rgb(109, 192, 188);
+  }
+
+  .Tues {
+    background-color: white;
+  }
+  .Tues:hover {
+    background-color: rgb(109, 192, 188);
+  }
+  .Tues:focus {
+    background-color: rgb(109, 192, 188);
+  }
+
+  
+  .Wed {
+    background-color: white;
+  }
+  .Wed:hover {
+    background-color: rgb(109, 192, 188);
+  }
+  .Wed:focus {
+    background-color: rgb(109, 192, 188);
+  }
+
+  
+  .Thur {
+    background-color: white;
+  }
+  .Thur:hover {
+    background-color: rgb(109, 192, 188);
+  }
+  .Thur:focus {
+    background-color: rgb(109, 192, 188);
+  }
+
+
+  
+  .Fri {
+    background-color: white;
+  }
+  .Fri:hover {
+    background-color: rgb(109, 192, 188);
+  }
+  .Fri:focus {
+    background-color: rgb(109, 192, 188);
+  }
+
+
+  .Sat {
+    background-color: white;
+  }
+  .Sat:hover {
+    background-color: rgb(109, 192, 188);
+  }
+  .Sat:focus {
+    background-color: rgb(109, 192, 188);
+  }
+
+
+
+  .Sun {
+    background-color: white;
+  }
+  .Sun:hover {
+    background-color: rgb(109, 192, 188);
+  }
+  .Sun:focus {
+    background-color: rgb(109, 192, 188);
+  }
+
