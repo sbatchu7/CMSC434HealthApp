@@ -1,0 +1,156 @@
+/* Size the phone size box */
+/* Style the phonesize. */
+.box {
+    
+    width: 22%;
+    height: 80%;
+    background-color: rgb(109, 192, 188);
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    height:10%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Navbar links */
+.item {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+.icon {
+    width: 100%;
+    height: 40%;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10%;
+    color: gray;
+}
+
+.name {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 15px;
+    color: #363535;
+}
+
+/* Navbar links on mouse-over */
+.navbar .item:hover .icon {
+    color: white;
+    cursor: pointer;
+}
+.navbar .item:hover .name {
+    color: white;
+    cursor: pointer;
+}
+
+/* Current/active navbar link */
+.active .icon {
+    color: white;
+}
+
+.active .name {
+    color: white;
+}
+
+.form {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 8%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+input {
+    all: unset;
+    font: 16px system-ui;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+    font: 'Oswald';
+}
+
+.searchbtn {
+    width: 20%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    color:black;
+    padding: 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.searchbtn:hover {
+   background-color: gray;
+   color: white;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: #363535;
+}
+
+.title {
+    position: absolute;
+    color: #363535;
+    font-size: 30px;
+    font-family: 'Oswald';
+    top: 8px;
+    left: 16px;
+}
+
+.home_icon {
+    position: absolute;
+    top: 16px;
+    right: 8px;
+    float: right;
+    width: auto;
+    height: 50%;
+    font-size: 35px;
+}
+
+.back_image {
+    width: 100%;
+    height: 10%;
+    padding-bottom: 10px;
+    opacity: 0.3;
+    color: white;
+}
+
+.scroll {
+    height: 69%;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    /* position: absolute; */
+}
+
+.workout {
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+    width: 80%;
+    height: 30%;
+    margin: 0 auto;
+}
