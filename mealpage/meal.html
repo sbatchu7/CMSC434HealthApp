@@ -1,12 +1,63 @@
 <html>
     <head>
         <link rel="stylesheet" href="style/mealpagestyle.css">
+        <link rel="stylesheet" href="style/activitycircle.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body>
+    
+    <body style="background-color:rgb(191, 219, 217);">
         <div class="box">
+            <div>        
+                <img class="back_image" src="splash.jpg" alt="background">
+                <div class="title">Meal Plans</div>
+                
+            </div>
+            <!-- Comment -->
+            <div class="scroll">
+                    <div class ="reminderPlusCalender">
+                       
+
+                    </div>
+                       
+                        <div class="scrollmenu">
+                            <button class="scrollmenu Mon" onclick="funcOpen('Mon')">Mon <br> <span style="color: gray">01</span></button>
+                            <button class="scrollmenu Tues" onclick="funcOpen('Tues')">Tues<br> <span style="color: gray">02</span></button>
+                            <button class="scrollmenu Wed" onclick="funcOpen('Wed')">Wed<br> <span style="color: gray">03</span></button>
+                            <button class="scrollmenu Thur" onclick="funcOpen('Thur')">Thur<br> <span style="color: gray">04</span></button>
+                            <button class="scrollmenu Fri" onclick="funcOpen('Fri')">Fri<br> <span style="color: gray">05</span></button>
+                            <button class="scrollmenu Sat" onclick="funcOpen('Sat')">Sat<br> <span style="color: gray">06</span></button>
+                            <button class="scrollmenu Sun" onclick="funcOpen('Sun')">Sun<br> <span style="color: gray">07</span></button>
+                        </div>
+
+                        <div id="Mon" class="Button Name" >
+                            <div id = "monDate" style="text-align: left;  padding-left: 10px;">
+                                <p>Monday, October 1</p>
+                            </div>
+                           
+                        </div>
+                          
+                        <div id="Tues" class="Button Name" style="display:none">
+                            <div style="text-align: left;">
+                                <img src="medications.jpeg" width="150" height="100">
+                            </div>
+                          </div>
+                
+                          
+                          
+                          <div id="Wed" class="Button Name" style="display:none">
+                            <div style="text-align: left;">
+                                <img src="medications.jpeg" width="150" height="100">
+                            </div>
+                          </div>
+
+                   
+                    
+                    
+            </div>
+                    
+
             <div class="navbar">
                 <a href="../homepage/home.html">
                     <div class="item">
@@ -15,10 +66,12 @@
                     </div>
                 </a>
                 
-                <div class="item active">
-                    <div class="icon"><i class="fa fa-fw fa-leaf"></i></div>
-                    <div class="name">Meals</div>
-                </div>
+                
+                    <div class="item active">
+                        <div class="icon"><i class="fa fa-fw fa-leaf"></i></div>
+                        <div class="name">Meals</div>
+                    </div>
+                
 
                 <a href="../workoutpage/workout.html">
                     <div class="item">
@@ -35,5 +88,9 @@
                 </a>
             </div>
         </div>
+
+        <script src="script.js">
+
+        </script>
     </body>
 </html>
