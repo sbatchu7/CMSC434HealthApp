@@ -147,10 +147,210 @@ input {
     /* position: absolute; */
 }
 
-.workout {
-    background-color: rgba(255, 255, 255, .15);  
+.activity {
+    background-color: rgb(244, 240, 240);  
     backdrop-filter: blur(10px);
-    width: 80%;
-    height: 30%;
+    width: 90%;
+    height: 35%;
     margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 7%;
+}
+
+.subheading {
+    font-family: 'Oswald';
+    font-size: 22px;
+    padding-left: 5%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
+.move {
+    /* background-color: aqua; */
+    width: 50%;
+    height: 100%;
+    height: inherit;
+    margin-left: 3%;
+    padding-bottom: 2%;
+}
+
+.exercise {
+    /* background-color: aqua; */
+    width: 50%;
+    height: 100%;
+    height: inherit;
+    margin-left: 3%;
+    padding-bottom: 2%;
+}
+
+.stand {
+    /* background-color: aqua; */
+    width: 50%;
+    height: 100%;
+    height: inherit;
+    margin-left: 3%;
+    padding-bottom: 2%;
+}
+
+.smalltext {
+    font-family: 'Oswald';
+    font-size: 15px;
+}
+
+.largettext {
+    font-family: 'Oswald';
+    font-size: 17px;
+}
+
+.circle {
+    width: 40%;
+    height: 65%;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+.subheading2 {
+    font-family: 'Oswald';
+    font-size: 13px;
+    margin-top: 9%;
+    margin-bottom: 3%;
+    width: 67%;
+    text-align: right;
+    color: rgb(142, 208, 44);
+}
+.subheading3 {
+    font-family: 'Oswald';
+    font-size: 13px;
+    margin-top: 9%;
+    margin-bottom: 3%;
+    width: 60%;
+    text-align: right;
+    color: rgb(142, 208, 44);
+}
+
+/* WORKOUT CSS */
+.workout {
+    width: 90%;
+    height: 40%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 7%;
+}
+
+.workout_box {
+    background-color: rgb(244, 240, 240);  
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: inherit;
+    height: 34%;
+    margin-bottom: 2%;
+}
+
+.workout_box_icon {
+    width: 14%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    margin-left: 3%;
+}
+
+.workout_box_date {
+    width: 25%;
+    height: 85%;
+    margin-left: 73%;
+    top: 55%;
+    position: absolute;
+    text-align: right;
+    bottom: 0;
+    font-family: 'Oswald';
+    font-size: 15px;
+}
+
+.workout_box_name {
+    width: 45%;
+    height: 100%;
+    margin-left: 23%;
+}
+
+.workout_name {
+    font-family: 'Oswald';
+    font-size: 17px;
+    vertical-align: text-bottom;
+}
+
+.workout_metric {
+    font-family: 'Oswald';
+    font-size: 19px;
+    vertical-align: text-top;
+    color:  rgb(109, 192, 188);
+}
+
+/* MEDICATION CSS */
+.medicine {
+    width: 90%;
+    height: 40%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 7%;
+}
+
+.medicine_box {
+    background-color: rgb(244, 240, 240);  
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: inherit;
+    height: 34%;
+    margin-bottom: 2%;
+}
+
+.medicine_box_icon {
+    width: 14%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    margin-left: 3%;
+}
+
+.medicine_box_date {
+    width: 25%;
+    height: 85%;
+    margin-left: 73%;
+    top: 55%;
+    position: absolute;
+    text-align: right;
+    bottom: 0;
+    font-family: 'Oswald';
+    font-size: 15px;
+}
+
+.medicine_box_name {
+    width: 45%;
+    height: 100%;
+    margin-left: 23%;
+}
+
+.medicine_name {
+    font-family: 'Oswald';
+    font-size: 17px;
+    vertical-align: text-bottom;
+}
+
+.medicine_metric_taken {
+    font-family: 'Oswald';
+    font-size: 19px;
+    vertical-align: text-top;
+    color:  rgb(117, 192, 109);
+}
+
+.medicine_metric_not_taken {
+    font-family: 'Oswald';
+    font-size: 19px;
+    vertical-align: text-top;
+    color:  rgb(196, 86, 86);
+}
+
+.main div {
+    float: left;
+    clear: none;
 }
