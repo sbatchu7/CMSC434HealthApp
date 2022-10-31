@@ -1,6 +1,6 @@
 document.querySelector('#pushMon').onclick = function () {
     if (document.querySelector('#newtaskMon input').value.length == 0) {
-        alert("Please enter a Workout and the number of reps")
+        
     }
 
     else {
@@ -26,7 +26,7 @@ document.querySelector('#pushMon').onclick = function () {
 
 document.querySelector('#pushTue').onclick = function () {
     if (document.querySelector('#newtaskTue input').value.length == 0) {
-        alert("Please enter a Workout and the number of reps")
+        
     }
 
     else {
@@ -52,7 +52,7 @@ document.querySelector('#pushTue').onclick = function () {
 
 document.querySelector('#pushWed').onclick = function () {
     if (document.querySelector('#newtaskWed input').value.length == 0) {
-        alert("Please enter a Workout and the number of reps")
+        
     }
 
     else {
@@ -78,7 +78,7 @@ document.querySelector('#pushWed').onclick = function () {
 
 document.querySelector('#pushThu').onclick = function () {
     if (document.querySelector('#newtaskThu input').value.length == 0) {
-        alert("Please enter a Workout and the number of reps")
+        
     }
 
     else {
@@ -104,7 +104,7 @@ document.querySelector('#pushThu').onclick = function () {
 
 document.querySelector('#pushFri').onclick = function () {
     if (document.querySelector('#newtaskFri input').value.length == 0) {
-        alert("Please enter a Workout and the number of reps")
+        
     }
 
     else {
@@ -130,7 +130,7 @@ document.querySelector('#pushFri').onclick = function () {
 
 document.querySelector('#pushSat').onclick = function () {
     if (document.querySelector('#newtaskSat input').value.length == 0) {
-        alert("Please enter a Workout and the number of reps")
+        
     }
 
     else {
@@ -156,7 +156,7 @@ document.querySelector('#pushSat').onclick = function () {
 
 document.querySelector('#pushSun').onclick = function () {
     if (document.querySelector('#newtaskSun input').value.length == 0) {
-        alert("Please enter a Workout and the number of reps")
+        
     }
 
     else {
