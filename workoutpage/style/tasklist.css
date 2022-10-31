@@ -11,24 +11,14 @@ body {
     background: #066acd;
 }
 
-/* .container {
-    width: 40%;
-    top: 50%;
-    left: 50%;
-    background: white;
-    border-radius: 10px;
-    min-width: 450px;
-    position: absolute;
-    min-height: 100px;
-    transform: translate(-50%, -50%);
-} */
 
-#newtask {
+
+#newtaskMon {
     position: relative;
     padding: 30px 20px;
 }
 
-#newtask input {
+#newtaskMon input {
     width: 75%;
     height: 45px;
     padding: 12px;
@@ -41,12 +31,12 @@ body {
     border: 2px solid #d1d3d4;
 }
 
-#newtask input:focus {
+#newtaskMon input:focus {
     outline: none;
     border-color: #0d75ec;
 }
 
-#newtask button {
+#newtaskMon button {
     position: relative;
     float: right;
     font-weight: 500;
@@ -62,7 +52,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#tasks {
+#tasksMon {
     border-radius: 10px;
     width: 100%;
     position: relative;
@@ -71,7 +61,7 @@ body {
     margin-top: 10px;
 }
 
-.task {
+.taskMon {
     border-radius: 5px;
     align-items: center;
     justify-content: space-between;
@@ -84,13 +74,91 @@ body {
     display: flex;
 }
 
-.task span {
+.taskMon span {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 400;
 }
 
-.task button {
+.taskMon button {
+    background-color: #6583e5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
+
+#newtaskTue {
+    position: relative;
+    padding: 30px 20px;
+}
+
+#newtaskTue input {
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+
+#newtaskTue input:focus {
+    outline: none;
+    border-color: #0d75ec;
+}
+
+#newtaskTue button {
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #0d75ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#tasksTue {
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.taskTue {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+
+.taskTue span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.taskTue button {
     background-color: #6583e5;
     color: #ffffff;
     border: none;
