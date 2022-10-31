@@ -15,12 +15,12 @@ body {
 
 #newtaskMon {
     position: relative;
-    padding: 30px 20px;
+    padding: 10px 20px;
 }
 
 #newtaskMon input {
-    width: 75%;
-    height: 45px;
+    width: 66%;
+    height: 10%;
     padding: 12px;
     color: #111111;
     font-weight: 500;
@@ -57,8 +57,8 @@ body {
     width: 100%;
     position: relative;
     background-color: #ffffff;
-    padding: 30px 20px;
-    margin-top: 10px;
+    padding: 5px 20px;
+    margin-top: 0px;
 }
 
 .taskMon {
@@ -69,9 +69,10 @@ body {
     cursor: pointer;
     background-color: #c5e1e6;
     height: 50px;
-    margin-bottom: 8px;
+    margin-top: 0px;
     padding: 5px 10px;
     display: flex;
+    
 }
 
 .taskMon span {
@@ -86,19 +87,27 @@ body {
     border: none;
     cursor: pointer;
     outline: none;
+    display: inline-block;
     height: 100%;
     width: 40px;
-    border-radius: 5px;
+    border-radius: 5px; 
+    
+}
+
+.taskMon button:before {
+    display: inline-block;
+    content: "\00d7";
+    zoom: 2
 }
 
 #newtaskTue {
     position: relative;
-    padding: 30px 20px;
+    padding: 10px 20px;
 }
 
 #newtaskTue input {
-    width: 75%;
-    height: 45px;
+    width: 66%;
+    height: 10%;
     padding: 12px;
     color: #111111;
     font-weight: 500;
@@ -135,7 +144,7 @@ body {
     width: 100%;
     position: relative;
     background-color: #ffffff;
-    padding: 30px 20px;
+    padding: 5px 20px;
     margin-top: 10px;
 }
 
@@ -169,14 +178,20 @@ body {
     border-radius: 5px;
 }
 
+.taskTue button:before {
+    display: inline-block;
+    content: "\00d7";
+    zoom: 2
+}
+
 #newtaskWed {
     position: relative;
-    padding: 30px 20px;
+    padding: 10px 20px;
 }
 
 #newtaskWed input {
-    width: 75%;
-    height: 45px;
+    width: 66%;
+    height: 10%;
     padding: 12px;
     color: #111111;
     font-weight: 500;
@@ -213,7 +228,7 @@ body {
     width: 100%;
     position: relative;
     background-color: #ffffff;
-    padding: 30px 20px;
+    padding: 5px 20px;
     margin-top: 10px;
 }
 
@@ -247,14 +262,20 @@ body {
     border-radius: 5px;
 }
 
+.taskWed button:before {
+    display: inline-block;
+    content: "\00d7";
+    zoom: 2
+}
+
 #newtaskThu {
     position: relative;
-    padding: 30px 20px;
+    padding: 10px 20px;
 }
 
 #newtaskThu input {
-    width: 75%;
-    height: 45px;
+    width: 66%;
+    height: 10%;
     padding: 12px;
     color: #111111;
     font-weight: 500;
@@ -291,7 +312,7 @@ body {
     width: 100%;
     position: relative;
     background-color: #ffffff;
-    padding: 30px 20px;
+    padding: 5px 20px;
     margin-top: 10px;
 }
 
@@ -325,14 +346,20 @@ body {
     border-radius: 5px;
 }
 
+.taskThu button:before {
+    display: inline-block;
+    content: "\00d7";
+    zoom: 2
+}
+
 #newtaskFri {
     position: relative;
-    padding: 30px 20px;
+    padding: 10px 20px;
 }
 
 #newtaskFri input {
-    width: 75%;
-    height: 45px;
+    width: 66%;
+    height: 10%;
     padding: 12px;
     color: #111111;
     font-weight: 500;
@@ -369,7 +396,7 @@ body {
     width: 100%;
     position: relative;
     background-color: #ffffff;
-    padding: 30px 20px;
+    padding: 5px 20px;
     margin-top: 10px;
 }
 
@@ -403,14 +430,20 @@ body {
     border-radius: 5px;
 }
 
+.taskFri button:before {
+    display: inline-block;
+    content: "\00d7";
+    zoom: 2
+}
+
 #newtaskSat {
     position: relative;
-    padding: 30px 20px;
+    padding: 10px 20px;
 }
 
 #newtaskSat input {
-    width: 75%;
-    height: 45px;
+    width: 66%;
+    height: 10%;
     padding: 12px;
     color: #111111;
     font-weight: 500;
@@ -447,7 +480,7 @@ body {
     width: 100%;
     position: relative;
     background-color: #ffffff;
-    padding: 30px 20px;
+    padding: 5px 20px;
     margin-top: 10px;
 }
 
@@ -481,14 +514,20 @@ body {
     border-radius: 5px;
 }
 
+.taskSat button:before {
+    display: inline-block;
+    content: "\00d7";
+    zoom: 2
+}
+
 #newtaskSun {
     position: relative;
-    padding: 30px 20px;
+    padding: 10px 20px;
 }
 
 #newtaskSun input {
-    width: 75%;
-    height: 45px;
+    width: 66%;
+    height: 10%;
     padding: 12px;
     color: #111111;
     font-weight: 500;
@@ -525,7 +564,7 @@ body {
     width: 100%;
     position: relative;
     background-color: #ffffff;
-    padding: 30px 20px;
+    padding: 5px 20px;
     margin-top: 10px;
 }
 
@@ -557,4 +596,10 @@ body {
     height: 100%;
     width: 40px;
     border-radius: 5px;
+}
+
+.taskSun button:before {
+    display: inline-block;
+    content: "\00d7";
+    zoom: 2
 }
