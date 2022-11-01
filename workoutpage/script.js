@@ -5,6 +5,7 @@ document.querySelector('#pushMon').onclick = function () {
     }
 
     else {
+        
         document.querySelector('#tasksMon').innerHTML += `
             <div class="taskMon">
                 <span id="tasknameMon">
@@ -22,6 +23,7 @@ document.querySelector('#pushMon').onclick = function () {
                 this.parentNode.remove();
             }
         }
+        document.getElementById("monText").value = "";
     }
 }
 
@@ -49,6 +51,7 @@ document.querySelector('#pushTue').onclick = function () {
                 this.parentNode.remove();
             }
         }
+        document.getElementById("tueText").value = "";
     }
 }
 
@@ -76,6 +79,7 @@ document.querySelector('#pushWed').onclick = function () {
                 this.parentNode.remove();
             }
         }
+        document.getElementById("wedText").value = "";
     }
 }
 
@@ -103,6 +107,7 @@ document.querySelector('#pushThu').onclick = function () {
                 this.parentNode.remove();
             }
         }
+        document.getElementById("thuText").value = "";
     }
 }
 
@@ -131,6 +136,7 @@ document.querySelector('#pushFri').onclick = function () {
             }
         }
     }
+    document.getElementById("friText").value = "";
 }
 
 document.querySelector('#pushSat').onclick = function () {
@@ -158,6 +164,7 @@ document.querySelector('#pushSat').onclick = function () {
             }
         }
     }
+    document.getElementById("satText").value = "";
 }
 
 document.querySelector('#pushSun').onclick = function () {
@@ -185,6 +192,7 @@ document.querySelector('#pushSun').onclick = function () {
             }
         }
     }
+    document.getElementById("sunText").value = "";
 }
 
 function funcOpen(whatButton) {
