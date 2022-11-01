@@ -41,8 +41,8 @@
                 
                     <div style="text-align: left;">
                         <div id="newtaskMon">
-                            <input type="text" placeholder="Add Workout for Mon" onclick="funcOpenKeyboard()">
-                            <button id="pushMon">Add</button>
+                            <input type="text" placeholder="Add Workout for Mon" onclick="searchBoxClicked()">
+                            <button id="pushMon" onclick="closeboard()">Add</button>
                         </div>
                         <div id="tasksMon"></div>
                     </div>
@@ -52,7 +52,7 @@
                 <div id="Tues" class="Button Name" style="display:none">
                     <div style="text-align: left;">
                         <div id="newtaskTue">
-                            <input type="text" placeholder="Add Workout for Tues">
+                            <input type="text" placeholder="Add Workout for Tues" onclick="searchBoxClicked()">
                             <button id="pushTue">Add</button>
                         </div>
                         <div id="tasksTue"></div>
@@ -64,7 +64,7 @@
                 <div id="Wed" class="Button Name" style="display:none">
                     <div style="text-align: left;">
                         <div id="newtaskWed">
-                            <input type="text" placeholder="Add Workout for Wed" onclick="funcOpenKeyboard()">
+                            <input type="text" placeholder="Add Workout for Wed" onclick="searchBoxClicked()">
                             <button id="pushWed">Add</button>
                         </div>
                         <div id="tasksWed"></div>
@@ -74,7 +74,7 @@
                 <div id="Thur" class="Button Name" style="display:none">
                     <div style="text-align: left;">
                         <div id="newtaskThu">
-                            <input type="text" placeholder="Add Workout for Thur" onclick="funcOpenKeyboard()">
+                            <input type="text" placeholder="Add Workout for Thur" onclick="searchBoxClicked()"">
                             <button id="pushThu">Add</button>
                         </div>
                         <div id="tasksThu"></div>
@@ -84,7 +84,7 @@
                 <div id="Fri" class="Button Name" style="display:none">
                     <div style="text-align: left;">
                         <div id="newtaskFri">
-                            <input type="text" placeholder="Add Workout for Fri" onclick="funcOpenKeyboard()">
+                            <input type="text" placeholder="Add Workout for Fri" onclick="searchBoxClicked()">
                             <button id="pushFri">Add</button>
                         </div>
                         <div id="tasksFri"></div>
@@ -94,7 +94,7 @@
                 <div id="Sat" class="Button Name" style="display:none">
                     <div style="text-align: left;">
                         <div id="newtaskSat">
-                            <input type="text" placeholder="Add Workout for Sat" onclick="funcOpenKeyboard()">
+                            <input type="text" placeholder="Add Workout for Sat" onclick="searchBoxClicked()">
                             <button id="pushSat">Add</button>
                         </div>
                         <div id="tasksSat"></div>
@@ -104,7 +104,7 @@
                 <div id="Sun" class="Button Name" style="display:none">
                     <div style="text-align: left;">
                         <div id="newtaskSun">
-                            <input type="text" placeholder="Add Workout for Sun" onclick="funcOpenKeyboard()">
+                            <input type="text" placeholder="Add Workout for Sun" onclick="searchBoxClicked()">
                             <button id="pushSun">Add</button>
                         </div>
                         <div id="tasksSun"></div>
@@ -112,6 +112,10 @@
                 </div>
             
             
+            </div>
+
+            <div class="overlap">
+                <img class="keyboard" id="yourImgId" onclick="closeboard()" src="keyboard.png" alt="keyboard">
             </div>
 
             <div class="navbar">
