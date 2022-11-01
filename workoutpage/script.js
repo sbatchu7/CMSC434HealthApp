@@ -1,4 +1,5 @@
 document.querySelector('#pushMon').onclick = function () {
+    closeboard();
     if (document.querySelector('#newtaskMon input').value.length == 0) {
         
     }
@@ -25,6 +26,7 @@ document.querySelector('#pushMon').onclick = function () {
 }
 
 document.querySelector('#pushTue').onclick = function () {
+    closeboard();
     if (document.querySelector('#newtaskTue input').value.length == 0) {
         
     }
@@ -51,6 +53,7 @@ document.querySelector('#pushTue').onclick = function () {
 }
 
 document.querySelector('#pushWed').onclick = function () {
+    closeboard();
     if (document.querySelector('#newtaskWed input').value.length == 0) {
         
     }
@@ -77,6 +80,7 @@ document.querySelector('#pushWed').onclick = function () {
 }
 
 document.querySelector('#pushThu').onclick = function () {
+    closeboard();
     if (document.querySelector('#newtaskThu input').value.length == 0) {
         
     }
@@ -103,6 +107,7 @@ document.querySelector('#pushThu').onclick = function () {
 }
 
 document.querySelector('#pushFri').onclick = function () {
+    closeboard();
     if (document.querySelector('#newtaskFri input').value.length == 0) {
         
     }
@@ -129,6 +134,7 @@ document.querySelector('#pushFri').onclick = function () {
 }
 
 document.querySelector('#pushSat').onclick = function () {
+    closeboard();
     if (document.querySelector('#newtaskSat input').value.length == 0) {
         
     }
@@ -155,6 +161,7 @@ document.querySelector('#pushSat').onclick = function () {
 }
 
 document.querySelector('#pushSun').onclick = function () {
+    closeboard();
     if (document.querySelector('#newtaskSun input').value.length == 0) {
         
     }
