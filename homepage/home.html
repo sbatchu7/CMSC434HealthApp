@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="style/activitycircle.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="code/keyboard.js"></script> 
     </head>
 
     <body style="background-color:rgb(191, 219, 217);">
@@ -16,7 +17,7 @@
              
             <div style="padding-left: 10px; padding-right: 10px;">
                 <div class="form" role="search" style="width: 100%;">
-                    <input type="search" id="myInput" name="q" placeholder="Type Here...">
+                    <input type="search" id="myInput" placeholder="Type Here..." onclick="searchBoxClicked()">
                     <button class="searchbtn" onclick=""><i class="fa fa-fw fa-search"></i></button>
                 </div>
             </div>
@@ -111,7 +112,10 @@
                         <div class="medicine_box_date">Today ></div>
                     </div>
                 </div>
+            </div>
 
+            <div class="overlap">
+                <img class="keyboard" id="yourImgId" onclick="closeboard()" src="keyboard.png" alt="keyboard">
             </div>
 
             <div class="navbar">
