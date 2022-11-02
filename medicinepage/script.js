@@ -95,3 +95,9 @@ function funcOpen(whatButton) {
       var yourImg = document.getElementById('yourImgId');
       yourImg.style.height = '0%';
     }
+
+    function searchBoxClicked1() {
+      console.log('focus');
+      var yourImg = document.getElementById('yourImgId1');
+      yourImg.style.height = '30%';
+    }
