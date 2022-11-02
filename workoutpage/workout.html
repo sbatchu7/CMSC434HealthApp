@@ -19,11 +19,14 @@
 
 
         <div class="scroll">
+
+            <div id = "buttons" style="display:none">
             <button class="todoButton" onclick="open_todo_list()">Create your own workout list</button><br>
             <button class="startButton" onclick="personal_workout()">Start a workout</button><br>
+            </div>
 
-            <div id = "info"> To create you own workout plan please select create your own workout. 
-                To start a specific workout with our specific instructions please slect start a workout
+            <div id = "info" style="display:none"> To create you own workout plan please select create your own workout. 
+                To start a sp<br>ecific workout with our specific instructions please slect start a workout
             </div>
             <div id="workout todo list" style="display:none">
                 <div class="reminder">
@@ -133,7 +136,7 @@
 
             </div>
 
-            <div id="start a workout" style="display:none">
+            <div id="start a workout" > Click on the image of the workout you want to start<br>
                 <img id="Cardio" src="runner.png" width=100 height=100 onclick="startWorkout()">
                 <h1 id="cardio_text">Cardio Workout</h1>
                 <img id="Strength_Training" src="muscle.png" width=100 height=100 onclick="startWorkout()">
@@ -142,6 +145,11 @@
                 <h1 id="ab_text">Ab Workout</h1>
                 <img id="Cycling" src="cyclist.png" width=100 height=100 onclick="startWorkout()">
                 <h1 id="cycling_text">Cycling Workout</h1>
+            </div>
+
+            <div id = "form" style="display:none"> 
+
+            
             </div>
         </div>
 
