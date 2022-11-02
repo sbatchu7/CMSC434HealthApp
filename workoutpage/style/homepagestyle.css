@@ -262,3 +262,52 @@ input {
     height: 0;
     transition: all .3s ease-out;
 }
+
+#Cardio {
+    position:relative;
+    border-right-width: 10px;
+    
+}
+
+#Strength_Training {
+    position: relative;
+    right: 100px;
+    top: 110px
+}
+
+#Ab_Workout {
+    position: relative;
+    right: 200px;
+    top: 250px;
+}
+
+#Cycling {
+    position: relative;
+    right: 300px;
+    top: 390px;
+}
+
+#cardio_text {
+    position: absolute;
+    right: 76px;
+    top: 150px;
+}
+
+#strength_text {
+    position: absolute;
+    right: 50px;
+    top: 290px;
+}
+
+#ab_text {
+    position: absolute;
+    right: 120px;
+    top: 420px;
+}
+
+#cycling_text {
+    position: absolute;
+    right: 50px;
+    top: 550px;
+}
+

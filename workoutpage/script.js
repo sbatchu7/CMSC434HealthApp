@@ -216,3 +216,15 @@ function closeboard() {
     var yourImg = document.getElementById('yourImgId');
     yourImg.style.height = '0%';
 }
+
+function open_todo_list() {
+    document.getElementById('workout todo list').style.display = "";
+    document.getElementById('start a workout').style.display = "none";
+    document.getElementById('info').style.display = "none";
+}
+
+function personal_workout() {
+    document.getElementById('workout todo list').style.display = "none";
+    document.getElementById('start a workout').style.display = "";
+    document.getElementById('info').style.display = "none";
+}
