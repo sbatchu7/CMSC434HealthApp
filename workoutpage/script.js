@@ -227,6 +227,7 @@ function personal_workout() {
     document.getElementById('workout todo list').style.display = "none";
     document.getElementById('start a workout').style.display = "";
     document.getElementById('info').style.display = "none";
+    
 }
 
 function startWorkout() {
