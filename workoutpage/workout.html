@@ -148,8 +148,58 @@
             </div>
 
             <div id = "form" style="display:none"> 
+                <div id="form_desc"> Please enter your information so we can track your progress. This only
+                    has to be done once and your data will be saved to your account
+                </div>
+
+                <div style=" font-family: 'Trebuchet MS'; padding-top: 5px; padding-left: 5px;">Age </div>
+                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;" type="text"
+                    placeholder="Enter Your Age" onclick="searchBoxClicked()">
+                <div style=" position: absolute;
+                                        top: 95px;
+                                        right: 35px;
+                                        float: right;
+                                        width: auto;
+                                        height: 40%;
+                                        font-size: 35px;
+                                        color: black;"></div>
+                
+                <div style=" margin-top: 10px; font-family: 'Trebuchet MS'; padding-top: 5px; padding-left: 5px;">Height </div>
+                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;" type="text"
+                    placeholder="Enter Your Height" onclick="searchBoxClicked()">
+                
+                <div style=" margin-top: 10px; font-family: 'Trebuchet MS'; padding-top: 5px; padding-left: 5px;">Weight </div>
+                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;" type="text"
+                    placeholder="Enter Your Weight" onclick="searchBoxClicked()">
+                
+                <div style="margin-top: 10px; font-family: 'Trebuchet MS'; padding-top: 5px; padding-left: 5px;">Ethnicity </div>
+                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;" type="text"
+                    placeholder="Enter your Ethnicity" onclick="searchBoxClicked()">
+                <br>
+                <div> 
+                    <p>Please select the Level of Difficulty you want your wokrouts to be in:</p>
+                     <select id="difficulty">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+
+                </div> <br>
+
+                <div> 
+                    <button type="button" id = "formFinished" onclick="formFinished()"> Start Your Workout!</button>
+                </div>
 
             
+            </div>
+
+            <div id = "workout_session" style="display:none"> 
+                We are sorry but this program is currently not running. 
+                Click the button below to go back to the Workout Page
+
+            <button type="button" id="goBack" onclick="workout_page()"> Go back to Workout Page</button>
+
+
             </div>
         </div>
 
