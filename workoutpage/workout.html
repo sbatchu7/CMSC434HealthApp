@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style/homepagestyle.css">
+    <link rel="stylesheet" href="style/workoutpage.css">
     <link rel="stylesheet" href="style/activitycircle.css">
     <link rel="stylesheet" href="style/tasklist.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -25,11 +25,11 @@
             <button id="startButton" onclick="personal_workout()">Start a workout</button><br>
             </div>
 
-            <div id = "info" > To create you own workout plan please select create your own workout. 
+            <div id = "info" class = "info" > To create you own workout plan please select create your own workout. 
                 To start a specific workout with our specific instructions please select start a workout
             </div>
             <div id="workout todo list" style="display:none">
-                <div class="reminder">
+                <div class="info">
                     <p>Here is a reminder of the workouts you need to do today! Scroll Left-Right to pick your day.
                         Scroll Up-Down to see your workouts</p>
                 </div>
@@ -136,7 +136,7 @@
 
             </div>
 
-            <div id="start a workout" style="display:none"> Click on the image of the workout you want to start<br>
+            <div id="start a workout" style="display:none"> <div class = "info">Click on the image of the workout you want to start</div><br>
                 <img id="Cardio" src="runner.png" width=100 height=100 onclick="startWorkout()">
                 <h1 id="cardio_text">Cardio Workout</h1>
                 <img id="Strength_Training" src="muscle.png" width=100 height=100 onclick="startWorkout()">

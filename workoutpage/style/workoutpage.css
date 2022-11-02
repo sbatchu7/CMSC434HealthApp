@@ -263,6 +263,16 @@ input {
     transition: all .3s ease-out;
 }
 
+.info {
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+    color: gray;
+    text-align: left;
+    padding-left: 8px;
+
+    padding-top: 10px;
+}
+
 
 
 /* #Cardio {
