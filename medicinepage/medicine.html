@@ -26,48 +26,61 @@
                         <div class = "reminder">Here is a reminder of the medicines you need to take today.
                         </div>
 
-                        <div class="scrollmenu">
-                            <i style="font-size: 25" class="fa fa-caret-left" aria-hidden="true"></i>
-                            <button class="scrollmenu Mon" onclick="funcOpen('Mon')">Mon <br> <span style="color: gray;margin: 5px 5px;">01</span></button>
-                            <button class="scrollmenu Tues" onclick="funcOpen('Tues')">Tues<br> <span style="color: gray;margin: 5px 5px;">02</span></button>
-                            <button class="scrollmenu Wed" onclick="funcOpen('Wed')">Wed<br> <span style="color: gray;margin: 5px 5px;">03</span></button>
-                            <button class="scrollmenu Thur" onclick="funcOpen('Thur')">Thur<br> <span style="color: gray;margin: 5px 5px;">04</span></button>
-                            <button class="scrollmenu Fri" onclick="funcOpen('Fri')">Fri<br> <span style="color: gray; margin: 5px 5px;">05</span></button>
-                            <button class="scrollmenu Sat" onclick="funcOpen('Sat')">Sat<br> <span style="color: gray;margin: 5px 5px;">06</span></button>
-                            <button class="scrollmenu Sun" onclick="funcOpen('Sun')">Sun<br> <span style="color: gray;margin: 5px 5px;">07</span></button>
-                            <i style="font-size: 25" class="fa fa-caret-right" aria-hidden="true"></i>
+                        <div style = "float: left; margin-top: 20px;font-size:35" >
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
                         </div>
-                          
+                        
+                                    <div class="scrollmenu">                                       
+                                        <button class="scrollmenu Mon" onclick="funcOpen('Mon')">Mon <br> <span style="color: gray;margin: 5px 5px;">01</span></button>
+                                        <button class="scrollmenu Tues" onclick="funcOpen('Tues')">Tues<br> <span style="color: gray;margin: 5px 5px;">02</span></button>
+                                        <button class="scrollmenu Wed" onclick="funcOpen('Wed')">Wed<br> <span style="color: gray;margin: 5px 5px;">03</span></button>
+                                        <button class="scrollmenu Thur" onclick="funcOpen('Thur')">Thur<br> <span style="color: gray;margin: 5px 5px;">04</span></button>
+                                        <button class="scrollmenu Fri" onclick="funcOpen('Fri')">Fri<br> <span style="color: gray; margin: 5px 5px;">05</span></button>
+                                        <button class="scrollmenu Sat" onclick="funcOpen('Sat')">Sat<br> <span style="color: gray;margin: 5px 5px;">06</span></button>
+                                        <button class="scrollmenu Sun" onclick="funcOpen('Sun')">Sun<br> <span style="color: gray;margin: 5px 5px;">07</span></button>       
+                                    </div>
+                                      
+                        <div style = "float: right; margin-top: -55px;font-size:35" >
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </div>
                   
                           
                         <div id="Mon" class="Button Name"  >
                             
                             <div style = "font-family: 'Trebuchet MS';
                             font-size: 15px;
-                            color: black;">Monday, October 1
+                            color: black;"><u>Monday, October 1</u>
                             </div>
 
                                     
                             <div style = "width: 90%;
-                            height: 40%;
+                            height: 30%;
                             background-color: rgb(244, 240, 240);  
                             margin: 0 auto; 
                             margin-top: 10px;"> 
-                                    <div style = "padding-top: 10px; margin-left: -210px;">
-                                        <img src="Medicine1.png" width="72" height="80">
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine1.png" width="72" height="70">
                                         
-                                        <div style = "margin-top: -90px; margin-left: 250px; color: black; font-family: 'Trebuchet MS';">
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
                                             Atorvastatin
                                         </div>
 
-                                        <div style = "margin-top: 1px; margin-left: 250px; color: gray; font-family: 'Trebuchet MS';">
-                                            7:00am
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 7:00am
                                         </div>
 
-                                        <div style = "margin-top: 1px; margin-left: 250px; color: gray; font-family: 'Trebuchet MS';">
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
                                             Before Meal
                                         </div>
                                         
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
 
                                     </div>
                            </div>
@@ -77,55 +90,94 @@
                             background-color: rgb(244, 240, 240);  
                             margin: 0 auto; 
                             margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Medicine6.png" width="60" height="60">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
-                                        </div>
-
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
-                                        </div>
-                                        
-                                    </div>
-                           </div>
-
-                           <div style = "width: 90%;
-                            height: 30%;
-                            background-color: rgb(244, 240, 240);  
-                            margin: 0 auto; 
-                            margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Medicine3.png" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
-                                        </div>
-
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
-                                        </div>
-                                        
-                                    </div>
-                           </div>
-
-                           <div style = "width: 90%;
-                            height: 30%;
-                            background-color: rgb(244, 240, 240);  
-                            margin: 0 auto; 
-                            margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
                                         <img src="Medicine5.png" width="72" height="70">
                                         
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin B3
                                         </div>
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 9:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
                                         </div>
                                         
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine2.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Losartan
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 10:30am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine6.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin D
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 11:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
                                     </div>
                            </div>
                 </div>
@@ -133,7 +185,7 @@
                         <div id="Tues" class="Button Name" style="display:none">
                             <div style = "font-family: 'Trebuchet MS';
                             font-size: 15px;
-                            color: black;">Tuesday, October 2
+                            color: black;"><u>Tuesday, October 2</u>
                             </div>
 
                             <div style = "width: 90%;
@@ -141,84 +193,134 @@
                             background-color: rgb(244, 240, 240);  
                             margin: 0 auto; 
                             margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Medicine4.png" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
-                                        </div>
-
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
-                                        </div>
-                                        
-                                    </div>
-                           </div>
-
-                           <div style = "width: 90%;
-                            height: 30%;
-                            background-color: rgb(244, 240, 240);  
-                            margin: 0 auto; 
-                            margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Medicine3.png" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
-                                        </div>
-
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
-                                        </div>
-                                        
-                                    </div>
-                           </div>
-
-                           <div style = "width: 90%;
-                            height: 30%;
-                            background-color: rgb(244, 240, 240);  
-                            margin: 0 auto; 
-                            margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Medicine2.png" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
-                                        </div>
-
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
-                                        </div>
-                                        
-                                    </div>
-                           </div>
-
-                           <div style = "width: 90%;
-                            height: 30%;
-                            background-color: rgb(244, 240, 240);  
-                            margin: 0 auto; 
-                            margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
                                         <img src="Medicine1.png" width="72" height="70">
                                         
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Atorvastatin
                                         </div>
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 7:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
                                         </div>
                                         
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine5.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin B3
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 9:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine2.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Losartan
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 10:30am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine6.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin D
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 11:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
                                     </div>
                            </div>
                         </div>
                 
-                          
-                          
-                          <div id="Wed" class="Button Name" style="display:none">
+                        <div id="Wed" class="Button Name" style="display:none">
                             <div style = "font-family: 'Trebuchet MS';
                             font-size: 15px;
-                            color: black;">Wednesday, October 3
+                            color: black;"><u>Wednesday, October 3</u>
                             </div>
 
                             <div style = "width: 90%;
@@ -226,17 +328,30 @@
                             background-color: rgb(244, 240, 240);  
                             margin: 0 auto; 
                             margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="ACAI.jpeg" width="72" height="70">
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine1.png" width="72" height="70">
                                         
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Atorvastatin
                                         </div>
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 7:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
                                         </div>
                                         
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
                                     </div>
                            </div>
 
@@ -245,17 +360,30 @@
                             background-color: rgb(244, 240, 240);  
                             margin: 0 auto; 
                             margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="ACAI.jpeg" width="72" height="70">
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine5.png" width="72" height="70">
                                         
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin B3
                                         </div>
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 9:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
                                         </div>
                                         
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
                                     </div>
                            </div>
 
@@ -264,17 +392,30 @@
                             background-color: rgb(244, 240, 240);  
                             margin: 0 auto; 
                             margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="ACAI.jpeg" width="72" height="70">
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine2.png" width="72" height="70">
                                         
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Losartan
                                         </div>
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 10:30am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
                                         </div>
                                         
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
                                     </div>
                            </div>
 
@@ -283,52 +424,580 @@
                             background-color: rgb(244, 240, 240);  
                             margin: 0 auto; 
                             margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="ACAI.jpeg" width="72" height="70">
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine6.png" width="72" height="70">
                                         
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin D
                                         </div>
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 11:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
                                         </div>
                                         
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
                                     </div>
                            </div>
+                        </div>
+
+                        <div id="Thur" class="Button Name" style="display:none">
+                            <div style = "font-family: 'Trebuchet MS';
+                            font-size: 15px;
+                            color: black;"><u>Thursday, October 4</u>
+                            </div>
+
+                            <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine1.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Atorvastatin
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 7:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine5.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin B3
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 9:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine2.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Losartan
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 10:30am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine6.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin D
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 11:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+                        </div>
+
+                        <div id="Fri" class="Button Name" style="display:none">
+                            <div style = "font-family: 'Trebuchet MS';
+                            font-size: 15px;
+                            color: black;"><u>Friday, October 5</u>
+                            </div>
+
+                            <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine1.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Atorvastatin
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 7:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine5.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin B3
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 9:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine2.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Losartan
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 10:30am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine6.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin D
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 11:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+                        </div>
+
+                        <div id="Sat" class="Button Name" style="display:none">
+                            <div style = "font-family: 'Trebuchet MS';
+                            font-size: 15px;
+                            color: black;"><u>Saturday, October 6</u>
+                            </div>
+
+                            <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine1.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Atorvastatin
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 7:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine5.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin B3
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 9:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine2.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Losartan
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 10:30am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine6.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin D
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 11:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+                        </div>
                           
-                          
-                          <div style = "height: 170px;
-                          width: 220px;
-                          background-color: rgb(244, 240, 240);
-                          color: gray(129, 34, 34);
-                          border: solid 3px gray; 
-                          margin-left: 50px;
-                          margin-top: 10px;">
-                                  <div style = "padding-top: 10px;">
-                                      <img src="omeprazole.jpeg" width="100" height="100">
-                                  </div>
-                                  <div style = "font-family: 'Trebuchet MS';
-                                  font-size: 15px;
-                                  color: black; text-align: center;">
-                                      Vitamin C
-                                  </div>
-                                  <div style = "font-family: 'Trebuchet MS';
-                                  font-size: 15px;
-                                  color: black; text-align: center;">
-                                      Time:- 11:00 PM
-                                  </div>
-                                  <div style = "font-family: 'Trebuchet MS';
-                                  font-size: 15px;
-                                  color: black; text-align: center;">
-                                      Before Bed
-                                  </div>
-                
-                         </div>
-                          </div>
+                          <div id="Sun" class="Button Name" style="display:none">
+                            <div style = "font-family: 'Trebuchet MS';
+                            font-size: 15px;
+                            color: black;"><u>Sunday, October 7</u>
+                            </div>
 
+                            <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine1.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Atorvastatin
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 7:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine5.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin B3
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 9:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Before Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine2.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Losartan
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 10:30am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+
+                           <div style = "width: 90%;
+                            height: 30%;
+                            background-color: rgb(244, 240, 240);  
+                            margin: 0 auto; 
+                            margin-top: 10px;"> 
+                                    <div style = "padding-top: 1px; margin-left: -210px;">
+                                        <img src="Medicine6.png" width="72" height="70">
+                                        
+                                        <div style = "margin-top: -70px; margin-left: 180px; color: black;font-size: 18px;font-family: 'Trebuchet MS';">
+                                            Vitamin D
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            Time: 11:00am
+                                        </div>
+
+                                        <div style = "margin-top: 1px; margin-left: 180px; color: gray; font-family: 'Trebuchet MS';">
+                                            After Meal
+                                        </div>
+                                        
+                                        <div style = "margin-top: -50px; margin-left: 380px; color: gray; font-family: 'Trebuchet MS';"> 
+                                            <select id = "dropdownID" onchange="dropSelect();">
+                                                <option>--Status--</option>
+                                                  <option>Taken</option>
+                                                  <option>Not Taken</option>
+                                              </select>
+                                        </div>
+
+
+                                    </div>
+                           </div>
+                        </div>
+                        
+                          
+
+                          
+                         <!-- dhjhsdsds -->
+                          <!-- hgsfdsdggsjhdgjsh -->
                    
-                    
                     
             </div>
                     

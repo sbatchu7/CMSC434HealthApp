@@ -128,14 +128,14 @@
 }
 
 .scrollmenu {
-    background-color: #ffffff;
-    overflow: auto;
-    white-space: nowrap;
-    font-family: 'Trebuchet MS';
-    padding: 10px 15px;
-  
- 
-  }
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  font-family: 'Trebuchet MS';
+  padding: 10px 10px;
+  padding-left: 9.5px;
+  margin-right: 20px;
+}
 
   .Mon {
     background-color: white;
