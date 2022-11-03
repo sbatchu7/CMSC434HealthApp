@@ -363,10 +363,34 @@ input {
     transition: all .3s ease-out;
 }
 
-.overlap {
+.overlap_keyboard{
     height: 69%;
     width: 100%;
     margin-bottom: 10px;
     margin-top: 10px;
     z-index: 9;
+}
+
+.overlap_workout_popup{
+    height: 0%;
+    width: 0%;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 9;
+    /* transition:  all .3s ease-out; */
+    background-color: rgb(244, 240, 240); 
+}
+
+.overlap_background_blur{
+    height: 0%;
+    width: 0%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    vertical-align: text-bottom;
+    z-index: 9;
+    backdrop-filter: blur(0px);
+    transition: ease-in-out;
+    position: relative;
 }
