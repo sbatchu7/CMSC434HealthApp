@@ -284,6 +284,22 @@ input {
     left: 265px;
     bottom: 50px;
 }
+#help {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 125px;
+    bottom: 96px;
+}
+#buttons {
+    height: 50px;
+}
+.info {
+    font-family: 'Trebuchet MS';
+        font-size: 15px;
+        color: gray;
+        text-align: left;
+}
 
 
 /* #Cardio {

@@ -233,7 +233,7 @@ function personal_workout() {
 function startWorkout() {
     document.getElementById('workout todo list').style.display = "none";
     document.getElementById('start a workout').style.display = "none";
-    document.getElementById('buttons').style.display = "none";
+    // document.getElementById('buttons').style.display = "none";
     document.getElementById('form').style.display = "";
 
 }
@@ -245,5 +245,12 @@ function formFinished() {
 function workout_page() {
     document.getElementById('workout_session').style.display = "none";
     document.getElementById('buttons').style.display = "";
+    document.getElementById('info').style.display = "";
+}
+function showInfo() {
+    document.getElementById('workout todo list').style.display = "none";
+
+    // document.getElementById('workout_session').style.display = "none";
+    document.getElementById('start a workout').style.display = "none";
     document.getElementById('info').style.display = "";
 }
