@@ -1,7 +1,6 @@
 /* Size the phone size box */
 /* Style the phonesize. */
 .box {
-    
     width: 22%;
     height: 80%;
     background-color: rgb(109, 192, 188);
@@ -105,6 +104,7 @@ input {
 }
 
 .container {
+    height: 10%;
     position: relative;
     text-align: center;
     color: #363535;
@@ -131,8 +131,8 @@ input {
 
 .back_image {
     width: 100%;
-    height: 10%;
-    padding-bottom: 10px;
+    height: 100%;
+    margin-bottom: 10px;
     opacity: 0.3;
     color: white;
 }
