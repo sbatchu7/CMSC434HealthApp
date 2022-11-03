@@ -20,14 +20,31 @@
 
         <div class="scroll">
 
-            <div id="info" class="info" style="display:none; font-family: 'Trebuchet MS'; font-size: 20px;"> To view your personal workout plan please click the
-                list icon. To start a workout program from your own home please click on the home icon
-            </div>
+
 
             <div id="buttons">
-                <image src="Workout List.png" id="todoButton" onclick="open_todo_list()"></button><br>
-                <image src="Workout Program.png" id="startButton" onclick="personal_workout()"></button><br>
-                <image src="help.png" id="help" onclick="showInfo()"></button><br>
+                            <div id="info" class="info" style=" font-family: 'Trebuchet MS'; font-size: 15px;"> To view your personal
+                                workout plan please click the
+                                list icon. To start a workout program from your own home please click on the home icon
+                            </div>
+                <div style="width: 250px;
+                            height: 250px;
+                            margin-left: 84px;
+                            margin-top: 10px;
+                            background-color: rgb(244, 240, 240);  
+                            ">
+                <image style= "position: absolute;" src="Workout List.png" id="todoButton" onclick="open_todo_list()" ></image><br>
+                </div>
+
+                <div style="width: 250px;
+                                            height: 250px;
+                                            margin-left: 84px;
+                                            margin-top: 40px;
+                                            background-color: rgb(244, 240, 240);  
+                                            ">
+                <image style= "position: absolute;" src="Workout Program.png" id="startButton" onclick="personal_workout()"></image>
+                </div>
+                
             </div>
 
             <br>
