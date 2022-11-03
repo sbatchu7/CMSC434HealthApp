@@ -110,9 +110,7 @@
     margin-bottom: 5px;
     font-family: 'Oswald';
     color: #363535;
-    
     overflow-y: scroll;
-    /* position: absolute; */
 }
 
 .weeklyBox {
