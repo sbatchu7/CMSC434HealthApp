@@ -221,12 +221,14 @@ function open_todo_list() {
     document.getElementById('workout todo list').style.display = "";
     document.getElementById('start a workout').style.display = "none";
     document.getElementById('info').style.display = "none";
+    document.getElementById('buttons').style.display = "none";
 }
 
 function personal_workout() {
     document.getElementById('workout todo list').style.display = "none";
     document.getElementById('start a workout').style.display = "";
     document.getElementById('info').style.display = "none";
+    document.getElementById('buttons').style.display = "none";
     
 }
 
@@ -246,10 +248,11 @@ function workout_page() {
     document.getElementById('workout_session').style.display = "none";
     document.getElementById('buttons').style.display = "";
     document.getElementById('info').style.display = "";
+    document.getElementById('form').style.display = "none";
 }
 function showInfo() {
     document.getElementById('workout todo list').style.display = "none";
-
+    document.getElementById('form').style.display = "none"; 
     // document.getElementById('workout_session').style.display = "none";
     document.getElementById('start a workout').style.display = "none";
     document.getElementById('info').style.display = "";

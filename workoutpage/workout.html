@@ -20,142 +20,801 @@
 
         <div class="scroll">
 
-            <div id = "buttons" >
-            <image src = "Workout List.png" id="todoButton" onclick="open_todo_list()"></button><br>
-            <image src = "Workout Program.png" id="startButton" onclick="personal_workout()"></button><br>
-            <image src="help.png" id="help" onclick="showInfo()"></button><br>
+            <div id="info" class="info" style="display:none"> To view your personal workout plan please click the
+                list icon on the left. To start a workout program from your own home please click on the home icon on
+                the right.
             </div>
 
-            <br><div id = "info" class = "info" style="display:none"> To view your personal workout plan please click the 
-                list icon on the left. To start a workout program from your own home please click on the home icon on the right.
+            <div id="buttons">
+                <image src="Workout List.png" id="todoButton" onclick="open_todo_list()"></button><br>
+                <image src="Workout Program.png" id="startButton" onclick="personal_workout()"></button><br>
+                <image src="help.png" id="help" onclick="showInfo()"></button><br>
             </div>
+
+            <br>
+            
             <div id="workout todo list" style="display:none">
                 <div class="info">
-                    Here is a reminder of the workouts you need to do today! Scroll Left-Right to pick your day.
-                        Scroll Up-Down to see your workouts
+                    Here is a reminder of the workouts you need to do today!
                 </div>
                 <div class="scrollmenu">
+                    <i style="font-size:25" class="fa fa-caret-left" aria-hidden="true"></i>
                     <button class="scrollmenu Mon" onclick="funcOpen('Mon')">Mon <br> <span
-                            style="color: gray">01</span></button>
+                            style="color: gray;margin: 5px 5px;">01</span></button>
                     <button class="scrollmenu Tues" onclick="funcOpen('Tues')">Tues<br> <span
-                            style="color: gray">02</span></button>
+                            style="color: gray;margin: 5px 5px;">02</span></button>
                     <button class="scrollmenu Wed" onclick="funcOpen('Wed')">Wed<br> <span
-                            style="color: gray">03</span></button>
+                            style="color: gray;margin: 5px 5px;">03</span></button>
                     <button class="scrollmenu Thur" onclick="funcOpen('Thur')">Thur<br> <span
-                            style="color: gray">04</span></button>
+                            style="color: gray;margin: 5px 5px;">04</span></button>
                     <button class="scrollmenu Fri" onclick="funcOpen('Fri')">Fri<br> <span
-                            style="color: gray">05</span></button>
+                            style="color: gray; margin: 5px 5px;">05</span></button>
                     <button class="scrollmenu Sat" onclick="funcOpen('Sat')">Sat<br> <span
-                            style="color: gray">06</span></button>
+                            style="color: gray;margin: 5px 5px;">06</span></button>
                     <button class="scrollmenu Sun" onclick="funcOpen('Sun')">Sun<br> <span
-                            style="color: gray">07</span></button>
+                            style="color: gray;margin: 5px 5px;">07</span></button>
+                    <i style="font-size: 25" class="fa fa-caret-right" aria-hidden="true"></i>
+
                 </div>
 
+                <div style="padding-left: 300px;  font-size: 25px; position: absolute;">
+                    <a href="#popup" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+                    </a>
+                </div>
 
+                <div id="popup" class="overlay">
+                    <div class="popup">
+                        Modify Your Workouts Here...
+                        <a class="close" href="#">&times;</a>
+                    </div>
+                </div>
 
                 <div id="Mon" class="Button Name">
 
-                    <div style="text-align: left;">
-                        <div id="newtaskMon">
-                            <input id="monText" type="text" placeholder="Add Workout for Mon"
-                                onclick="searchBoxClicked()">
-                            <button id="pushMon">Add</button>
-                        </div>
-                        <div id="tasksMon"></div>
+                    <div style="font-family: 'Trebuchet MS';
+                                            font-size: 15px;
+                                            color: black;">Monday, October 1
                     </div>
 
+
+                    <div style="width: 90%;
+                                            height: 30%;
+                                            background-color: rgb(244, 240, 240);  
+                                            margin: 0 auto;
+                                            
+                                            margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="runner.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Run
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1.13 Miles
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div style="width: 90%;
+                                   height: 30%;
+                                   background-color: rgb(244, 240, 240);  
+                                   margin: 0 auto;
+                                   
+                                   margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="sit-up.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Situp
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1 Hour and 5 Minutes
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                        <br>
+                    </div>
+
+
+
+
+
+                    <div style="width: 90%;
+                                                        height: 30%;
+                                                        background-color: rgb(244, 240, 240);  
+                                                        margin: 0 auto;
+                                                        
+                                                        margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="cyclist.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Cycle
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                2.51 Miles
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
                 </div>
 
                 <div id="Tues" class="Button Name" style="display:none">
-                    <div style="text-align: left;">
-                        <div id="newtaskTue">
-                            <input id="tueText" type="text" placeholder="Add Workout for Tues"
-                                onclick="searchBoxClicked()">
-                            <button id="pushTue">Add</button>
+
+                    <div style="font-family: 'Trebuchet MS';
+                                                            font-size: 15px;
+                                                            color: black;">Tuesday, October 2
+                    </div>
+
+
+                    <div style="width: 90%;
+                                                            height: 30%;
+                                                            background-color: rgb(244, 240, 240);  
+                                                            margin: 0 auto;
+                                                            
+                                                            margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="runner.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Run
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1.13 Miles
+                            </div>
+
                         </div>
-                        <div id="tasksTue"></div>
+
+
+
+                    </div>
+
+
+                    <div style="width: 90%;
+                                                   height: 30%;
+                                                   background-color: rgb(244, 240, 240);  
+                                                   margin: 0 auto;
+                                                   
+                                                   margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="sit-up.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Situp
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1 Hour and 5 Minutes
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                        <br>
+                    </div>
+
+
+                    <div style="width: 90%;
+                                                                        height: 30%;
+                                                                        background-color: rgb(244, 240, 240);  
+                                                                        margin: 0 auto;
+                                                                        
+                                                                        margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="cyclist.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Cycle
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                2.51 Miles
+                            </div>
+
+                        </div>
+
+
+
                     </div>
                 </div>
 
-
-
                 <div id="Wed" class="Button Name" style="display:none">
-                    <div style="text-align: left;">
-                        <div id="newtaskWed">
-                            <input id="wedText" type="text" placeholder="Add Workout for Wed"
-                                onclick="searchBoxClicked()">
-                            <button id="pushWed">Add</button>
+
+                    <div style="font-family: 'Trebuchet MS';
+                                                                            font-size: 15px;
+                                                                            color: black;">Wednesday, October 3
+                    </div>
+
+
+                    <div style="width: 90%;
+                                                                            height: 30%;
+                                                                            background-color: rgb(244, 240, 240);  
+                                                                            margin: 0 auto;
+                                                                            
+                                                                            margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="runner.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Run
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1.13 Miles
+                            </div>
+
                         </div>
-                        <div id="tasksWed"></div>
+
+
+
+                    </div>
+
+
+                    <div style="width: 90%;
+                                                                   height: 30%;
+                                                                   background-color: rgb(244, 240, 240);  
+                                                                   margin: 0 auto;
+                                                                   
+                                                                   margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="sit-up.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Situp
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1 Hour and 5 Minutes
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                        <br>
+                    </div>
+
+
+                    <div style="width: 90%;
+                                                                                        height: 30%;
+                                                                                        background-color: rgb(244, 240, 240);  
+                                                                                        margin: 0 auto;
+                                                                                        
+                                                                                        margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="cyclist.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Cycle
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                2.51 Miles
+                            </div>
+
+                        </div>
+
+
+
                     </div>
                 </div>
 
                 <div id="Thur" class="Button Name" style="display:none">
-                    <div style="text-align: left;">
-                        <div id="newtaskThu">
-                            <input id="thuText" type="text" placeholder="Add Workout for Thur"
-                                onclick="searchBoxClicked()"">
-                            <button id=" pushThu">Add</button>
+                    <div style="font-family: 'Trebuchet MS';
+                        font-size: 15px;
+                        color: black;">Thursday ,
+                        October 4
+                    </div>
+
+
+                    <div style="width: 90%;
+                                                                                            height: 30%;
+                                                                                            background-color: rgb(244, 240, 240);  
+                                                                                            margin: 0 auto;
+                                                                                            margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="runner.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Run
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1.13 Miles
+                            </div>
+
                         </div>
-                        <div id="tasksThu"></div>
+
+
+
+                    </div>
+
+
+                    <div style="width: 90%;
+                                                                                   height: 30%;
+                                                                                   background-color: rgb(244, 240, 240);  
+                                                                                   margin: 0 auto;
+                                                                                   
+                                                                                   margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="sit-up.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Situp
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1 Hour and 5 Minutes
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                        <br>
+                    </div>
+
+
+                    <div
+                        style="width: 90%;
+                                                                                                        height: 30%;
+                                                                                                        background-color: rgb(244, 240, 240);  
+                                                                                                        margin: 0 auto;
+                                                                                                        
+                                                                                                        margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="cyclist.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Cycle
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                2.51 Miles
+                            </div>
+
+                        </div>
+
+
+
                     </div>
                 </div>
 
                 <div id="Fri" class="Button Name" style="display:none">
-                    <div style="text-align: left;">
-                        <div id="newtaskFri">
-                            <input id="friText" type="text" placeholder="Add Workout for Fri"
-                                onclick="searchBoxClicked()">
-                            <button id="pushFri">Add</button>
+
+                    <div
+                        style="font-family: 'Trebuchet MS';
+                                                                                                            font-size: 15px;
+                                                                                                            color: black;">
+                        Friday ,
+                        October 5
+                    </div>
+
+
+                    <div
+                        style="width: 90%;
+                                                                                                            height: 30%;
+                                                                                                            background-color: rgb(244, 240, 240);  
+                                                                                                            margin: 0 auto;
+                                                                                                            margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="runner.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Run
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1.13 Miles
+                            </div>
+
                         </div>
-                        <div id="tasksFri"></div>
+
+
+
+                    </div>
+
+
+                    <div style="width: 90%;
+                                                                                                   height: 30%;
+                                                                                                   background-color: rgb(244, 240, 240);  
+                                                                                                   margin: 0 auto;
+                                                                                                   
+                                                                                                   margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="sit-up.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Situp
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1 Hour and 5 Minutes
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                        <br>
+                    </div>
+
+
+                    <div
+                        style="width: 90%;
+                                                                                                                        height: 30%;
+                                                                                                                        background-color: rgb(244, 240, 240);  
+                                                                                                                        margin: 0 auto;
+                                                                                                                        
+                                                                                                                        margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="cyclist.png" width="72" height="70">
+
+                            <div
+                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Cycle
+                            </div>
+
+                            <div
+                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                2.51 Miles
+                            </div>
+
+                        </div>
+
+
+
                     </div>
                 </div>
 
                 <div id="Sat" class="Button Name" style="display:none">
-                    <div style="text-align: left;">
-                        <div id="newtaskSat">
-                            <input id="satText" type="text" placeholder="Add Workout for Sat"
-                                onclick="searchBoxClicked()">
-                            <button id="pushSat">Add</button>
+                
+                    <div
+                        style="font-family: 'Trebuchet MS';
+                                                                                                                            font-size: 15px;
+                                                                                                                            color: black;">
+                        Saturday ,
+                        October 6
+                    </div>
+                
+                
+                    <div
+                        style="width: 90%;
+                                                                                                                            height: 30%;
+                                                                                                                            background-color: rgb(244, 240, 240);  
+                                                                                                                            margin: 0 auto;
+                                                                                                                            margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="runner.png" width="72" height="70">
+                
+                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Run
+                            </div>
+                
+                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1.13 Miles
+                            </div>
+                
                         </div>
-                        <div id="tasksSat"></div>
+                
+                
+                
+                    </div>
+                
+                
+                    <div style="width: 90%;
+                                                                                                                   height: 30%;
+                                                                                                                   background-color: rgb(244, 240, 240);  
+                                                                                                                   margin: 0 auto;
+                                                                                                                   
+                                                                                                                   margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="sit-up.png" width="72" height="70">
+                
+                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Situp
+                            </div>
+                
+                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1 Hour and 5 Minutes
+                            </div>
+                
+                        </div>
+                
+                
+                
+                    </div>
+                
+                
+                
+                
+                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                        <br>
+                    </div>
+                
+                
+                    <div
+                        style="width: 90%;
+                                                                                                                                        height: 30%;
+                                                                                                                                        background-color: rgb(244, 240, 240);  
+                                                                                                                                        margin: 0 auto;
+                                                                                                                                        
+                                                                                                                                        margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="cyclist.png" width="72" height="70">
+                
+                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Cycle
+                            </div>
+                
+                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                2.51 Miles
+                            </div>
+                
+                        </div>
+                
+                
+                
                     </div>
                 </div>
 
                 <div id="Sun" class="Button Name" style="display:none">
-                    <div style="text-align: left;">
-                        <div id="newtaskSun">
-                            <input id="sunText" type="text" placeholder="Add Workout for Sun"
-                                onclick="searchBoxClicked()">
-                            <button id="pushSun">Add</button>
+                
+                    <div
+                        style="font-family: 'Trebuchet MS';
+                                                                                                                                            font-size: 15px;
+                                                                                                                                            color: black;">
+                        Sunday ,
+                        October 7
+                    </div>
+                
+                
+                    <div
+                        style="width: 90%;
+                                                                                                                                            height: 30%;
+                                                                                                                                            background-color: rgb(244, 240, 240);  
+                                                                                                                                            margin: 0 auto;
+                                                                                                                                            margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="runner.png" width="72" height="70">
+                
+                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Run
+                            </div>
+                
+                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1.13 Miles
+                            </div>
+                
                         </div>
-                        <div id="tasksSun"></div>
+                
+                
+                
+                    </div>
+                
+                
+                    <div
+                        style="width: 90%;
+                                                                                                                                   height: 30%;
+                                                                                                                                   background-color: rgb(244, 240, 240);  
+                                                                                                                                   margin: 0 auto;
+                                                                                                                                   
+                                                                                                                                   margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="sit-up.png" width="72" height="70">
+                
+                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Situp
+                            </div>
+                
+                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                1 Hour and 5 Minutes
+                            </div>
+                
+                        </div>
+                
+                
+                
+                    </div>
+                
+                
+                
+                
+                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                        <br>
+                    </div>
+                
+                
+                    <div
+                        style="width: 90%;
+                                                                                                                                                        height: 30%;
+                                                                                                                                                        background-color: rgb(244, 240, 240);  
+                                                                                                                                                        margin: 0 auto;
+                                                                                                                                                        
+                                                                                                                                                        margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="cyclist.png" width="72" height="70">
+                
+                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                Outdoor Cycle
+                            </div>
+                
+                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
+                                2.51 Miles
+                            </div>
+                
+                        </div>
+                
+                
+                
                     </div>
                 </div>
 
 
+
+
+
             </div>
 
-            <div id="start a workout" style="display:none"> <div class = "info">Click on the image of the workout you want to start</div><br>
-                <img id="Cardio" src="runner.png" width=100 height=100 onclick="startWorkout()">
-                <h1 id="cardio_text">Cardio Workout</h1>
-                <img id="Strength_Training" src="muscle.png" width=100 height=100 onclick="startWorkout()">
-                <h1 id="strength_text">Strength Training</h1>
-                <img id="Ab_Workout" src="abs.png" width=100 height=100 onclick="startWorkout()">
-                <h1 id="ab_text">Ab Workout</h1>
-                <img id="Cycling" src="cyclist.png" width=100 height=100 onclick="startWorkout()">
-                <h1 id="cycling_text">Cycling Workout</h1>
+            <div id="start a workout" style="display:none">
+                <div class="info">Click on the workout program you want to start</div><br>
+
+                <div style="width: 90%;
+                                                            height: 30%;
+                                                            background-color: rgb(244, 240, 240);  
+                                                            margin: 0 auto;
+                                                            
+                                                            margin-top: 10px;">
+                    <div style="padding-top: 0px; " onclick="startWorkout()">
+                        <img src="runner.png" width="150" height="150">
+                
+                        <div style="margin-top: -100px; margin-left: 180px; 
+                        color: black; font-family: 'Trebuchet MS'; font-size: 60px;">
+                            Cardio
+                        </div>
+                
+                    </div>
+
+                </div>
+
+                <div style="width: 90%;
+                                                                            height: 30%;
+                                                                            background-color: rgb(244, 240, 240);  
+                                                                            margin: 0 auto;
+                                                                            
+                                                                            margin-top: 10px;">
+                    <div style="padding-top: 0px; " onclick="startWorkout()">
+                        <img src="muscle.png" width="150" height="150">
+                
+                        <div style="margin-top: -110px; margin-left: 170px; 
+                                        color: black; font-family: 'Trebuchet MS'; font-size: 54px;">
+                            Strength <br> Training
+                        </div>
+                
+                    </div>
+                
+                </div>
+
+                <div style="width: 90%;
+                                                                                            height: 30%;
+                                                                                            background-color: rgb(244, 240, 240);  
+                                                                                            margin: 0 auto;
+                                                                                            
+                                                                                            margin-top: 10px;">
+                    <div style="padding-top: 0px; " onclick="startWorkout()">
+                        <img src="abs.png" width="150" height="150">
+                
+                        <div style="margin-top: -110px; margin-left: 170px; 
+                                                        color: black; font-family: 'Trebuchet MS'; font-size: 54px;">
+                            Ab <br> Workout
+                        </div>
+                
+                    </div>
+                
+                </div>
+
+                <div style="width: 90%;
+                                                                            height: 30%;
+                                                                            background-color: rgb(244, 240, 240);  
+                                                                            margin: 0 auto;
+                                                                            
+                                                                            margin-top: 10px;">
+                    <div style="padding-top: 0px; " onclick="startWorkout()">
+                        <img src="cyclist.png" width="150" height="150">
+                
+                        <div style="margin-top: -100px; margin-left: 180px; 
+                                        color: black; font-family: 'Trebuchet MS'; font-size: 60px;">
+                            Cycling
+                        </div>
+                
+                    </div>
+                
+                </div>
             </div>
 
-            <div id = "form" style="display:none"> 
-                <div id="form_desc" class = "info"> Please enter your information so we can track your progress. This only
+            <div id="form" style="display:none">
+                <div id="form_desc" class="info"> Please enter your information so we can track your progress. This only
                     has to be done once and your data will be saved to your account
                 </div>
 
                 <div style=" font-family: 'Trebuchet MS'; padding-top: 5px; padding-left: 5px;">Age </div>
-                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;" type="text"
-                    placeholder="Enter Your Age" onclick="searchBoxClicked()">
+                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;"
+                    type="text" placeholder="Enter Your Age" onclick="searchBoxClicked()">
                 <div style=" position: absolute;
                                         top: 95px;
                                         right: 35px;
@@ -164,20 +823,23 @@
                                         height: 40%;
                                         font-size: 35px;
                                         color: black;"></div>
-                
-                <div style=" margin-top: 10px; font-family: 'Trebuchet MS'; padding-top: 5px; padding-left: 5px;">Height </div>
-                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;" type="text"
-                    placeholder="Enter Your Height" onclick="searchBoxClicked()">
-                
-                <div style=" margin-top: 10px; font-family: 'Trebuchet MS'; padding-top: 5px; padding-left: 5px;">Weight </div>
-                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;" type="text"
-                    placeholder="Enter Your Weight" onclick="searchBoxClicked()">
-                
-                <div style="margin-top: 10px; font-family: 'Trebuchet MS'; padding-top: 5px; padding-left: 5px;">Ethnicity </div>
-                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;" type="text"
-                    placeholder="Enter your Ethnicity" onclick="searchBoxClicked()">
+
+                <div style=" margin-top: 10px; font-family: 'Trebuchet MS'; padding-top: 5px; padding-left: 5px;">Height
+                </div>
+                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;"
+                    type="text" placeholder="Enter Your Height" onclick="searchBoxClicked()">
+
+                <div style=" margin-top: 10px; font-family: 'Trebuchet MS'; padding-top: 5px; padding-left: 5px;">Weight
+                </div>
+                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;"
+                    type="text" placeholder="Enter Your Weight" onclick="searchBoxClicked()">
+
+                <div style="margin-top: 10px; font-family: 'Trebuchet MS'; padding-top: 5px; padding-left: 5px;">
+                    Ethnicity </div>
+                <input style="width:200px; height: 45px; margin-top: 10px; margin-left: 30px; text-align: left;"
+                    type="text" placeholder="Enter your Ethnicity" onclick="searchBoxClicked()">
                 <br>
-                <div> 
+                <div>
                     <p>Please select the Level of Difficulty you want your wokrouts to be in:</p>
                      <select id="difficulty">
                         <option value="Beginner">Beginner</option>
@@ -187,18 +849,18 @@
 
                 </div> <br>
 
-                <div> 
-                    <button type="button" id = "formFinished" onclick="formFinished()"> Start Your Workout!</button>
+                <div>
+                    <button type="button" id="formFinished" onclick="formFinished()"> Start Your Workout!</button>
                 </div>
 
-            
+
             </div>
 
-            <div id = "workout_session" style="display:none"> 
-                We are sorry but this program is currently not running. 
+            <div id="workout_session" style="display:none">
+                We are sorry but this program is currently not running.
                 Click the button below to go back to the Workout Page
 
-            <button type="button" id="goBack" onclick="workout_page()"> Go back to Workout Page</button>
+                <button type="button" id="goBack" onclick="workout_page()"> Go back to Workout Page</button>
 
 
             </div>
