@@ -19,18 +19,20 @@
 
 
         <div class="scroll">
-            <div id = "buttons">
-            <button id="todoButton" onclick="open_todo_list()">Create your own workout list</button><br>
-            <button id="startButton" onclick="personal_workout()">Start a workout</button><br>
+
+            <div id = "buttons" >
+            <image src = "Workout List.png" id="todoButton" onclick="open_todo_list()"></button><br>
+            <image src = "Workout Program.png" id="startButton" onclick="personal_workout()"></button><br>
+            <image src="help.png" id="help" onclick="showInfo()"></button><br>
             </div>
 
-            <div id = "info" class = "info" > To create you own workout plan please select create your own workout. 
-                To start a specific workout with our specific instructions please select start a workout
+            <br><div id = "info" class = "info" style="display:none"> To view your personal workout plan please click the 
+                list icon on the left. To start a workout program from your own home please click on the home icon on the right.
             </div>
             <div id="workout todo list" style="display:none">
                 <div class="info">
-                    <p>Here is a reminder of the workouts you need to do today! Scroll Left-Right to pick your day.
-                        Scroll Up-Down to see your workouts</p>
+                    Here is a reminder of the workouts you need to do today! Scroll Left-Right to pick your day.
+                        Scroll Up-Down to see your workouts
                 </div>
                 <div class="scrollmenu">
                     <button class="scrollmenu Mon" onclick="funcOpen('Mon')">Mon <br> <span
