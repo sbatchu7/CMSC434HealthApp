@@ -289,10 +289,11 @@ input {
 /* MEDICATION CSS */
 .medicine {
     width: 90%;
-    height: 40%;
+    height: 55%;
     margin: 0 auto;
     overflow: hidden;
     padding-bottom: 7%;
+    /* background-color: aqua; */
 }
 
 .medicine_box {
@@ -300,7 +301,7 @@ input {
     backdrop-filter: blur(10px);
     width: 100%;
     height: inherit;
-    height: 34%;
+    height: 25%;
     margin-bottom: 2%;
 }
 
