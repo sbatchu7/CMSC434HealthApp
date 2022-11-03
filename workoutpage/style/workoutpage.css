@@ -105,6 +105,7 @@ input {
 }
 
 .container {
+    height: 10%;
     position: relative;
     text-align: center;
     color: #363535;
@@ -131,18 +132,17 @@ input {
 
 .back_image {
     width: 100%;
-    height: 10%;
+    height: 100%;
     padding-bottom: 10px;
     opacity: 0.3;
     color: white;
 }
 
 .scroll {
-    height: 69%;
+    height: 80.5%;
     width: 100%;
     background-color: white;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 5px;
     overflow-y: scroll;
     position: absolute;
 }

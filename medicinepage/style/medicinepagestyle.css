@@ -63,7 +63,7 @@
 }
 
 .container {
-    height: 19%;
+    height: 10%;
     position: relative;
     text-align: center;
     color: #363535;
@@ -102,16 +102,16 @@
 
 .back_image {
     width: 100%;
-    height: 9%;
-    
+    height: 100%;
+    margin-bottom: 10px;
     opacity: 0.3;
     color: white;
 }
 .scroll {
-    height: 81%;
+    height: 80.5%;
     width: 100%;
     background-color: white;
-    margin-bottom: 80px;
+    margin-bottom: 5px;
     font-family: 'Oswald';
     color: #363535;
     
