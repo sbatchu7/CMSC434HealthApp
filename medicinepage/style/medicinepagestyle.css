@@ -122,23 +122,26 @@
 .weeklyBox {
     width: 40px;
     height: 60px;
-    background-color: rgb(109, 192, 188);
+    background-color: rgb(192, 163, 109);
     margin: 5;
     font-family: 'Trebuchet MS';
     
 }
 
 .scrollmenu {
-    background-color: white;
+    background-color: #ffffff;
     overflow: auto;
     white-space: nowrap;
     font-family: 'Trebuchet MS';
     padding: 10px 15px;
-    padding-left: 5px;
+  
+ 
   }
 
   .Mon {
     background-color: white;
+   
+    
   }
   .Mon:hover {
     background-color: rgb(109, 192, 188);
@@ -151,6 +154,7 @@
 
   .Tues {
     background-color: white;
+
   }
   .Tues:hover {
     background-color: rgb(109, 192, 188);
@@ -162,6 +166,7 @@
   
   .Wed {
     background-color: white;
+  
   }
   .Wed:hover {
     background-color: rgb(109, 192, 188);
@@ -173,6 +178,7 @@
   
   .Thur {
     background-color: white;
+  
   }
   .Thur:hover {
     background-color: rgb(109, 192, 188);
@@ -185,6 +191,7 @@
   
   .Fri {
     background-color: white;
+  
   }
   .Fri:hover {
     background-color: rgb(109, 192, 188);
@@ -196,6 +203,7 @@
 
   .Sat {
     background-color: white;
+
   }
   .Sat:hover {
     background-color: rgb(109, 192, 188);
@@ -208,6 +216,7 @@
 
   .Sun {
     background-color: white;
+
   }
   .Sun:hover {
     background-color: rgb(109, 192, 188);
