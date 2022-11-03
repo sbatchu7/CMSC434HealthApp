@@ -1,0 +1,97 @@
+.popup_box_top {
+    width: 100%;
+    height: 20%;
+    top: 0%;
+}
+
+.popup_close {
+    width: 12%;
+    height: 50%;
+    right: 0%;
+    margin-top: 5%;
+    margin-right: 5%;
+    float: right;
+}
+
+.popup_title {
+    width: 60%;
+    float: left;
+    /* background-color: blue; */
+    height: 100%;
+    font-family: 'Oswald';
+    font-size: 0px;
+    /* text-align: center; */
+    margin-left: 8%;
+    vertical-align: middle;
+    
+}
+
+.popup_scroll {
+    position: absolute;
+    overflow-y: scroll;
+    height: 79%;
+    width: 100%;
+    /* background-color: bisque; */
+    padding-bottom: 5px;
+    
+  
+}
+
+.popup_image {
+    height: 35%;
+    width: 40%;
+    /* background-color: brown; */
+    float: left;
+    margin-left: 3%;
+}
+
+.popup_workout_info {
+    width: 60%;
+    height: 37%;
+    margin-left: 55%; 
+    /* background-color: chartreuse;   */
+}
+
+.popup_workout_info_metric {
+    width: 100%; 
+    height: 30%;
+    /* background-color: palevioletred; */
+    font-family: 'Oswald';
+    font-size: 23px;
+    vertical-align: bottom;
+    color:  rgb(109, 192, 188);
+}
+
+.popup_workout_info_time {
+    width: 100%; 
+    height: 20%;
+    /* background-color: red;   */
+    font-family: 'Oswald';
+    font-size: 15px;
+}
+
+.popup_workout_info_loc {
+    font-family: 'Oswald';
+    font-size: 13px;
+}
+
+.popup_workout_info_date {
+    font-family: 'Oswald';
+    font-size: 17px;
+}
+
+.popup_ecg{
+    height: 27%;
+    width: 90%;
+    left: 50%;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.popup_stats{
+    height: 75%;
+    width: 90%;
+    left: 50%;
+    margin-left: 5%;
+    border-radius: 5px;
+}
