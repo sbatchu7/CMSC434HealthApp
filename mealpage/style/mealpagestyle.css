@@ -127,9 +127,9 @@
     overflow: auto;
     white-space: nowrap;
     font-family: 'Trebuchet MS';
-    padding: 10px 15px;
-    
-    
+    padding: 10px 10px;
+    padding-left: 9.5px;
+    margin-right: 20px;
   }
 
   .Mon {
