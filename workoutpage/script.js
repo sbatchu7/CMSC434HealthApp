@@ -269,6 +269,4 @@ function backButton() {
     document.getElementById('buttons').style.display = "";
     document.getElementById('sub_options').style.display = "";
     document.getElementById('sub_activity').style.display = "";
-
-    
 }
