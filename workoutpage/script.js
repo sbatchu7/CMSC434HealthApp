@@ -260,3 +260,14 @@ function showInfo() {
     document.getElementById('start a workout').style.display = "none";
     document.getElementById('info').style.display = "";
 }
+function backButton() {
+    document.getElementById('workout todo list').style.display = "none";
+    document.getElementById('workout_session').style.display = "none";
+    document.getElementById('start a workout').style.display = "none";
+    document.getElementById('activity').style.display = "";
+    document.getElementById('buttons').style.display = "";
+    document.getElementById('sub_options').style.display = "";
+    document.getElementById('sub_activity').style.display = "";
+
+    
+}

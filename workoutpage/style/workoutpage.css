@@ -483,6 +483,13 @@ input {
     margin-bottom: 3%;
 }
 
+.back_button {
+    height: 5%;
+    width: 5%;
+    position: absolute;
+    margin-top: -6%;
+}
+
 
 
 /* #Cardio {
