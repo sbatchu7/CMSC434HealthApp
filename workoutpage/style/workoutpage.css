@@ -450,6 +450,7 @@ input {
     bottom: 0;
     font-family: 'Oswald';
     font-size: 15px;
+    margin-top: -6%;
 }
 
 .workout_box_name {
@@ -471,6 +472,7 @@ input {
     position: absolute;
     vertical-align: text-top;
     color: rgb(109, 192, 188);
+    width: 70%
 }
 
 .subheading {
@@ -480,6 +482,8 @@ input {
     margin-top: 6%;
     margin-bottom: 3%;
 }
+
+
 
 /* #Cardio {
     position:relative;
