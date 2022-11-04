@@ -221,6 +221,8 @@ function open_todo_list() {
     document.getElementById('workout todo list').style.display = "";
     document.getElementById('buttons').style.display = "none";
     document.getElementById('activity').style.display = "none";
+    document.getElementById('sub_activity').style.display = "none";
+    document.getElementById('sub_options').style.display = "none";
     
 }
 
@@ -228,6 +230,8 @@ function personal_workout() {
     document.getElementById('start a workout').style.display = "";
     document.getElementById('buttons').style.display = "none";
     document.getElementById('activity').style.display = "none";
+    document.getElementById('sub_activity').style.display = "none";
+    document.getElementById('sub_options').style.display = "none";
     
 }
 

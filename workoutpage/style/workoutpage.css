@@ -428,13 +428,13 @@ input {
     backdrop-filter: blur(10px);
     width: 100%;
     height: inherit;
-    height: 34%;
+    height: 30%;
     margin-bottom: 2%;
 }
 
 .workout_box_icon {
     width: 14%;
-    height: 70%;
+    height: 50%;
     position: absolute;
     top: 15%;
     margin-left: 3%;
@@ -471,6 +471,14 @@ input {
     position: absolute;
     vertical-align: text-top;
     color: rgb(109, 192, 188);
+}
+
+.subheading {
+    font-family: 'Oswald';
+    font-size: 22px;
+    padding-left: 5%;
+    margin-top: 6%;
+    margin-bottom: 3%;
 }
 
 /* #Cardio {
