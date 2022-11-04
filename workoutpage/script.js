@@ -219,16 +219,15 @@ function closeboard() {
 
 function open_todo_list() {
     document.getElementById('workout todo list').style.display = "";
-    document.getElementById('start a workout').style.display = "none";
-    document.getElementById('info').style.display = "none";
     document.getElementById('buttons').style.display = "none";
+    document.getElementById('activity').style.display = "none";
+    
 }
 
 function personal_workout() {
-    document.getElementById('workout todo list').style.display = "none";
     document.getElementById('start a workout').style.display = "";
-    document.getElementById('info').style.display = "none";
     document.getElementById('buttons').style.display = "none";
+    document.getElementById('activity').style.display = "none";
     
 }
 

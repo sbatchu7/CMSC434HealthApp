@@ -150,7 +150,7 @@ input {
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(10px);
     width: 80%;
-    height: 30%;
+    height: 50%;
     margin: 0 auto;
 }
 
@@ -359,6 +359,118 @@ input {
 .overlay:target {
     visibility: visible;
     opacity: 1;
+}
+
+.move {
+    /* background-color: aqua; */
+    width: 50%;
+    height: 100%;
+    height: inherit;
+    margin-left: 3%;
+    padding-bottom: 2%;
+}
+
+.exercise {
+    /* background-color: aqua; */
+    width: 50%;
+    height: 100%;
+    height: inherit;
+    margin-left: 3%;
+    padding-bottom: 2%;
+}
+.smalltext {
+    font-family: 'Oswald';
+    font-size: 15px;
+}
+
+.stand {
+    /* background-color: aqua; */
+    width: 50%;
+    height: 100%;
+    height: inherit;
+    margin-left: 3%;
+    padding-bottom: 2%;
+}
+
+.circle {
+    width: 40%;
+    height: 65%;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+.activity {
+    background-color: rgb(244, 240, 240);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    height: 30%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 7%;
+}
+
+.main div {
+    float: left;
+    clear: none;
+}
+
+.workout {
+    width: 90%;
+    height: 500%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 7%;
+}
+
+.workout_box {
+    background-color: rgb(244, 240, 240);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: inherit;
+    height: 34%;
+    margin-bottom: 2%;
+}
+
+.workout_box_icon {
+    width: 14%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    margin-left: 3%;
+}
+
+.workout_box_date {
+    width: 25%;
+    height: 85%;
+    margin-left: 73%;
+    top: 55%;
+    position: absolute;
+    text-align: right;
+    bottom: 0;
+    font-family: 'Oswald';
+    font-size: 15px;
+}
+
+.workout_box_name {
+    width: 45%;
+    height: 100%;
+    margin-left: 23%;
+}
+
+.workout_name {
+    font-family: 'Oswald';
+    font-size: 100%;
+    
+    vertical-align: text-bottom;
+}
+
+.workout_metric {
+    font-family: 'Oswald';
+    font-size: 90%;
+    position: absolute;
+    vertical-align: text-top;
+    color: rgb(109, 192, 188);
 }
 
 /* #Cardio {

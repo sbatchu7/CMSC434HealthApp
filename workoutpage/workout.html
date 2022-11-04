@@ -20,14 +20,37 @@
 
         <div class="scroll">
 
+            
+            <br>
+            <div class="activity" id = "activity">
+                <img class="circle" src="fitness.jpg" alt="activitycircle">
+            
+                <div class="move">
+                    <div class="smalltext">Move</div>
+                    <div class="largettext" style="color: rgb(250,29,95,255);">100/2,000 cal</div>
+                </div>
+            
+                <div class="exercise">
+                    <div class="smalltext">Exercise</div>
+                    <div class="largettext" style="color: rgb(10, 203, 10);">1/20 min</div>
+                </div>
+            
+                <div class="stand">
+                    <div class="smalltext">Stand</div>
+                    <div class="largettext" style="color: rgb(56, 199, 247);">2/12 hrs</div>
+                </div>
+            </div>
+            
+
+           
+           
 
 
-            <br><div id="buttons">
-                            <div id="info" class="info" style=" font-family: 'Trebuchet MS'; font-size: 15px; text-align: left"> To view your personal
-                                workout plan please click the
-                                list icon. To start a workout program from your own home please click on the home icon
-                            </div><br>
-                <div style="width: 200px;
+
+            <br>
+            <div id="buttons">
+                            
+                <!-- <div style="width: 200px;
                             height: 200px;
                             
                             margin-left: 20% ;
@@ -36,9 +59,9 @@
                             
                             ">
                 <image src="Workout List.png" id="todoButton" onclick="open_todo_list()" ></image><br>
-                </div>
-                <br><br><br>
-                <div style="width: 200px;
+                </div> -->
+                <!-- <br><br><br> -->
+                <!-- <div style="width: 200px;
                             
                                             height: 200px;
                                             margin-left: 20% ;
@@ -46,7 +69,29 @@
                                             background-color: rgb(244, 240, 240);  
                                             ">
                 <image  src="Workout Program.png" id="startButton" onclick="personal_workout()"></image>
+                </div> -->
+
+                <div class="workout" id = "workout">
+                    <div class="workout_box" onclick="open_todo_list()">
+                        <img class="workout_box_icon" src="Workout List.png" alt="run">
+                        <div class="workout_box_name">
+                            <div class="workout_name">Workout List</div>
+                            <div class="workout_metric">Click Here to open up your workout list</div>
+                        </div>
+                        <div class="workout_box_date">      -></div>
+                    </div>
+                    <br>
+                    <div class="workout_box" onclick="personal_workout()">
+                        <img class="workout_box_icon" src="Workout Program.png" alt="run">
+                        <div class="workout_box_name">
+                            <div class="workout_name">Workout Program</div>
+                            <div class="workout_metric">Click here to start an at home workout program</div>
+                        </div>
+                        <div class="workout_box_date">         -></div>
+                    </div>
+                
                 </div>
+                
                 
             </div>
 
