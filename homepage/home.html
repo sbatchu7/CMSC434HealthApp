@@ -19,7 +19,7 @@
             <div style="padding-left: 10px; padding-right: 10px; margin-top: 10px;">
                 <div class="form" role="search" style="width: 100%;">
                     <input type="search" id="myInput" placeholder="Type Here..." onclick="searchBoxClicked()">
-                    <button class="searchbtn" onclick=""><i class="fa fa-fw fa-search"></i></button>
+                    <button class="searchbtn" onclick="expandMealSearchPopup()"><i class="fa fa-fw fa-search"></i></button>
                 </div>
             </div>
 
@@ -179,6 +179,41 @@
                         
                         <img class="popup_stats" src="details.png" alt="details">
 
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlap_background_blur" id="yourMealSearchBlurId">
+                <div class="overlap_workout_popup" id="yourMealSearchPopuId">
+                    <div class="popup_box_top">
+                        <div class="popup_title" id="yourMealSearchTitle"><u>Sushi Rolls</u></div>
+                        <img class="popup_close" src="remove.png" alt="remove" onclick="closeMealSearchPopup()">
+                    </div>
+                    <div class="popup_scroll">
+                            <img class="popup_image" src="sushi.png" alt="sushi">
+                       
+                        <div class="popup_workout_info">
+                            <div class="popup_workout_info_metric">200 CALs</div>
+                            <div class="popup_workout_info_time">Japanese Cuisine</div>
+                            <div class="popup_workout_info_loc" style="color: rgb(109, 192, 188);">20-30 MIN</div>
+                            <div class="popup_workout_info_loc">Serving Size: 3 People</div>
+                        </div>
+
+                        <div class="subheading" style="margin-top: 5%; color:  rgb(250,29,95,255);">Ingredients</div>
+                        <div class="reminder" style="margin-top: 2%;">- 1½ cups water.</div>
+                        <div class="reminder" style="margin-top: 2%;">- 3 tablespoons rice vinegar.</div>
+                        <div class="reminder" style="margin-top: 2%;">- 4 sheets nori seaweed sheets.</div>
+                        <div class="reminder" style="margin-top: 2%;">- ½ cucumber, cut into small strips.</div>
+                        
+                        <div class="subheading" style="margin-top: 5%; color:  rgb(250,29,95,255);">Receipe</div>
+                        <div class="reminder" style="margin-top: 2%;">1. Preheat the oven to 300 degrees.</div>
+                        <div class="reminder" style="margin-top: 2%;">2. Bring water to a boil in a medium pot; stir in rice.</div>
+                        <div class="reminder" style="margin-top: 2%;">3. Mix rice vinegar, sugar, and salt in a small bowl. Gently stir into cooked rice in the pot and set aside.</div>
+                        <div class="reminder" style="margin-top: 2%;">4. Lay nori sheets on a baking sheet.</div>
+                        <div class="reminder" style="margin-top: 2%;">5. Heat nori in the preheated oven until warm, 1 to 2 minutes.</div>
+
+                        <div class="subheading_btn" style="margin-top: 10%;">Add To Meal Plan ></div>
+                        <div class="subheading" style="margin-top: 5%;"> </div>
                     </div>
                 </div>
             </div>
