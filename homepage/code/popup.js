@@ -61,3 +61,35 @@ function closeSitUpPopup() {
     yourSitUpPopupTitle.style.height = `0%`;
     yourSitUpPopupTitle.style.fontSize = '0px';
 }
+
+function expandMealSearchPopup() {
+    var yourMealSearchBlurId = document.getElementById('yourMealSearchBlurId');
+    yourMealSearchBlurId.style.backdropFilter = `blur(10px)`;
+    yourMealSearchBlurId.style.width = `100%`;
+    yourMealSearchBlurId.style.height = `69%`;
+
+    var yourMealSearchPopuId = document.getElementById('yourMealSearchPopuId');
+    yourMealSearchPopuId.style.width = `90%`;
+    yourMealSearchPopuId.style.height = `90%`;
+
+    var yourMealSearchTitle = document.getElementById('yourMealSearchTitle');
+    yourMealSearchTitle.style.width = `60%`;
+    yourMealSearchTitle.style.height = `100%`;
+    yourMealSearchTitle.style.fontSize = '35px';
+}
+
+function closeMealSearchPopup() {
+    var yourMealSearchBlurId = document.getElementById('yourMealSearchBlurId');
+    yourMealSearchBlurId.style.backdropFilter = `blur(0px)`;
+    yourMealSearchBlurId.style.width = `0%`;
+    yourMealSearchBlurId.style.height = `0%`;
+
+    var yourMealSearchPopuId = document.getElementById('yourMealSearchPopuId');
+    yourMealSearchPopuId.style.width = `0%`;
+    yourMealSearchPopuId.style.height = `0%`;
+
+    var yourMealSearchTitle = document.getElementById('yourMealSearchTitle');
+    yourMealSearchTitle.style.width = `0%`;
+    yourMealSearchTitle.style.height = `0%`;
+    yourMealSearchTitle.style.fontSize = '0px';
+}
