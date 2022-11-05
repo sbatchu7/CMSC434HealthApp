@@ -14,7 +14,10 @@
         <div class="container">
             <img class="back_image" src="splash.jpg" alt="background">
             <div class="title">Workout</div>
-            <div class="home_icon"> <i class="fa fa-fw fa-user-circle-o"></i> </div>
+            <div id = "back_button" class="back_button" onclick="backButton()" style="display:none">
+                <i class="fa fa-arrow-left" ></i>
+            </div>
+            <!-- <div class="home_icon"> <i class="fa fa-fw fa-user-circle-o"></i> </div> -->
         </div>
 
 
@@ -83,7 +86,9 @@
             
             
             <div id="workout todo list" style="display:none">
-                <img class="back_button" src="Back Button.png" onclick="backButton()"></img>
+                <!-- <img class="back_button" src="Back Button.png" onclick="backButton()"></img> -->
+                
+
                 <div class="info">
                     Here is a reminder of the workouts you need to do today!
                 </div>
@@ -148,92 +153,119 @@
                             <img src="runner.png" width="72" height="70">
 
                             <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                style="font-family: 'Oswald';
+                                       font-size: 17px;
+                                       margin-left: 50%;
+                                       margin-top: -13.5%;">
                                 Outdoor Run
+
+                                <div style="
+                                                                 
+                                                                 color: rgb(109, 192, 188); 
+                                                                 font-size: 12px; 
+                                                                 ">
+                                    1.13 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
 
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1.13 Miles
-                            </div>
+                            
 
                         </div>
 
 
 
                     </div>
-
-
+                    <br>
                     <div style="width: 90%;
-                                   height: 30%;
-                                   background-color: rgb(244, 240, 240);  
-                                   margin: 0 auto;
-                                   
-                                   margin-top: 10px;">
+                                                                height: 30%;
+                                                                background-color: rgb(244, 240, 240);  
+                                                                margin: 0 auto;
+                                                                
+                                                                margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
                             <img src="sit-up.png" width="72" height="70">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                    
+                            <div style="font-family: 'Oswald';
+                                                           font-size: 17px;
+                                                           margin-left: 50%;
+                                                           margin-top: -13.5%;">
                                 Situp
+                    
+                                <div style="
+                                                                                     
+                                                                                     color: rgb(109, 192, 188); 
+                                                                                     font-size: 12px; 
+                                                                                     ">
+                                    1 Hour and 5 Minutes
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1 Hour and 5 Minutes
-                            </div>
-
+                    
+                    
+                    
                         </div>
-
-
-
+                    
+                    
+                    
                     </div>
-
-
-
-
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                        <br>
-                    </div>
-
-
-
-
-
+                    <br>
                     <div style="width: 90%;
-                                                        height: 30%;
-                                                        background-color: rgb(244, 240, 240);  
-                                                        margin: 0 auto;
-                                                        
-                                                        margin-top: 10px;">
+                                                                                    height: 30%;
+                                                                                    background-color: rgb(244, 240, 240);  
+                                                                                    margin: 0 auto;
+                                                                                    
+                                                                                    margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
-                            <img src="cyclist.png" width="72" height="65">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                            <img src="cyclist.png" width="72" height="67">
+                    
+                            <div style="font-family: 'Oswald';
+                                                                               font-size: 17px;
+                                                                               margin-left: 50%;
+                                                                               margin-top: -13.5%;">
                                 Outdoor Cycle
+                    
+                                <div style="
+                                                                                                         
+                                                                                                         color: rgb(109, 192, 188); 
+                                                                                                         font-size: 12px; 
+                                                                                                         ">
+                                    2.51 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                2.51 Miles
-                            </div>
-
+                    
+                    
+                    
                         </div>
-
-
-
+                    
+                    
+                    
                     </div>
+
+
                 </div>
 
                 <div id="Tues" class="Button Name" style="display:none">
-
+                
                     <div style="font-family: 'Trebuchet MS';
                                                             font-size: 15px;
                                                             color: black;"><u>Tuesday, October 2</u>
                     </div>
-
-
+                
+                
                     <div style="width: 90%;
                                                             height: 30%;
                                                             background-color: rgb(244, 240, 240);  
@@ -242,91 +274,120 @@
                                                             margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
                             <img src="runner.png" width="72" height="70">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                
+                            <div style="font-family: 'Oswald';
+                                                       font-size: 17px;
+                                                       margin-left: 50%;
+                                                       margin-top: -13.5%;">
                                 Outdoor Run
+                
+                                <div style="
+                                                                                 
+                                                                                 color: rgb(109, 192, 188); 
+                                                                                 font-size: 12px; 
+                                                                                 ">
+                                    1.13 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1.13 Miles
-                            </div>
-
+                
+                
+                
                         </div>
-
-
-
+                
+                
+                
                     </div>
-
-
+                    <br>
                     <div style="width: 90%;
-                                                   height: 30%;
-                                                   background-color: rgb(244, 240, 240);  
-                                                   margin: 0 auto;
-                                                   
-                                                   margin-top: 10px;">
+                                                                                height: 30%;
+                                                                                background-color: rgb(244, 240, 240);  
+                                                                                margin: 0 auto;
+                                                                                
+                                                                                margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
                             <img src="sit-up.png" width="72" height="70">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                
+                            <div style="font-family: 'Oswald';
+                                                                           font-size: 17px;
+                                                                           margin-left: 50%;
+                                                                           margin-top: -13.5%;">
                                 Situp
+                
+                                <div style="
+                                                                                                     
+                                                                                                     color: rgb(109, 192, 188); 
+                                                                                                     font-size: 12px; 
+                                                                                                     ">
+                                    1 Hour and 5 Minutes
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1 Hour and 5 Minutes
-                            </div>
-
+                
+                
+                
                         </div>
-
-
-
+                
+                
+                
                     </div>
-
-
-
-
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                        <br>
-                    </div>
-
-
+                    <br>
                     <div style="width: 90%;
-                                                                        height: 30%;
-                                                                        background-color: rgb(244, 240, 240);  
-                                                                        margin: 0 auto;
-                                                                        
-                                                                        margin-top: 10px;">
+                                                                                                    height: 30%;
+                                                                                                    background-color: rgb(244, 240, 240);  
+                                                                                                    margin: 0 auto;
+                                                                                                    
+                                                                                                    margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
-                            <img src="cyclist.png" width="72" height="70">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                            <img src="cyclist.png" width="72" height="67">
+                
+                            <div style="font-family: 'Oswald';
+                                                                                               font-size: 17px;
+                                                                                               margin-left: 50%;
+                                                                                               margin-top: -13.5%;">
                                 Outdoor Cycle
+                
+                                <div style="
+                                                                                                                         
+                                                                                                                         color: rgb(109, 192, 188); 
+                                                                                                                         font-size: 12px; 
+                                                                                                                         ">
+                                    2.51 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                2.51 Miles
-                            </div>
-
+                
+                
+                
                         </div>
-
-
-
+                
+                
+                
                     </div>
+                
+                
                 </div>
 
                 <div id="Wed" class="Button Name" style="display:none">
-
+                
                     <div style="font-family: 'Trebuchet MS';
                                                                             font-size: 15px;
                                                                             color: black;"><u>Wednesday, October 3</u>
                     </div>
-
-
+                
+                
                     <div style="width: 90%;
                                                                             height: 30%;
                                                                             background-color: rgb(244, 240, 240);  
@@ -335,464 +396,630 @@
                                                                             margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
                             <img src="runner.png" width="72" height="70">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                
+                            <div style="font-family: 'Oswald';
+                                                                       font-size: 17px;
+                                                                       margin-left: 50%;
+                                                                       margin-top: -13.5%;">
                                 Outdoor Run
+                
+                                <div style="
+                                                                                                 
+                                                                                                 color: rgb(109, 192, 188); 
+                                                                                                 font-size: 12px; 
+                                                                                                 ">
+                                    1.13 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1.13 Miles
-                            </div>
-
+                
+                
+                
                         </div>
-
-
-
+                
+                
+                
                     </div>
-
-
+                    <br>
                     <div style="width: 90%;
-                                                                   height: 30%;
-                                                                   background-color: rgb(244, 240, 240);  
-                                                                   margin: 0 auto;
-                                                                   
-                                                                   margin-top: 10px;">
+                                                                                                height: 30%;
+                                                                                                background-color: rgb(244, 240, 240);  
+                                                                                                margin: 0 auto;
+                                                                                                
+                                                                                                margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
                             <img src="sit-up.png" width="72" height="70">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                
+                            <div style="font-family: 'Oswald';
+                                                                                           font-size: 17px;
+                                                                                           margin-left: 50%;
+                                                                                           margin-top: -13.5%;">
                                 Situp
+                
+                                <div style="
+                                                                                                                     
+                                                                                                                     color: rgb(109, 192, 188); 
+                                                                                                                     font-size: 12px; 
+                                                                                                                     ">
+                                    1 Hour and 5 Minutes
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1 Hour and 5 Minutes
-                            </div>
-
+                
+                
+                
                         </div>
-
-
-
+                
+                
+                
                     </div>
-
-
-
-
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                        <br>
-                    </div>
-
-
+                    <br>
                     <div style="width: 90%;
-                                                                                        height: 30%;
-                                                                                        background-color: rgb(244, 240, 240);  
-                                                                                        margin: 0 auto;
-                                                                                        
-                                                                                        margin-top: 10px;">
+                                                                                                                    height: 30%;
+                                                                                                                    background-color: rgb(244, 240, 240);  
+                                                                                                                    margin: 0 auto;
+                                                                                                                    
+                                                                                                                    margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
-                            <img src="cyclist.png" width="72" height="70">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                            <img src="cyclist.png" width="72" height="67">
+                
+                            <div style="font-family: 'Oswald';
+                                                                                                               font-size: 17px;
+                                                                                                               margin-left: 50%;
+                                                                                                               margin-top: -13.5%;">
                                 Outdoor Cycle
+                
+                                <div
+                                    style="
+                                                                                                                                         
+                                                                                                                                         color: rgb(109, 192, 188); 
+                                                                                                                                         font-size: 12px; 
+                                                                                                                                         ">
+                                    2.51 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                2.51 Miles
-                            </div>
-
+                
+                
+                
                         </div>
-
-
-
+                
+                
+                
                     </div>
+                
+                
                 </div>
 
                 <div id="Thur" class="Button Name" style="display:none">
+                
                     <div style="font-family: 'Trebuchet MS';
-                        font-size: 15px;
-                        color: black;"><u>Thursday ,
-                        October 4</u>
+                                                                                            font-size: 15px;
+                                                                                            color: black;"><u>Thursday, October 4</u>
                     </div>
-
-
+                
+                
                     <div style="width: 90%;
                                                                                             height: 30%;
                                                                                             background-color: rgb(244, 240, 240);  
                                                                                             margin: 0 auto;
+                                                                                            
                                                                                             margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
                             <img src="runner.png" width="72" height="70">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                
+                            <div style="font-family: 'Oswald';
+                                                                                       font-size: 17px;
+                                                                                       margin-left: 50%;
+                                                                                       margin-top: -13.5%;">
                                 Outdoor Run
+                
+                                <div style="
+                                                                                                                 
+                                                                                                                 color: rgb(109, 192, 188); 
+                                                                                                                 font-size: 12px; 
+                                                                                                                 ">
+                                    1.13 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1.13 Miles
-                            </div>
-
+                
+                
+                
                         </div>
-
-
-
+                
+                
+                
                     </div>
-
-
+                    <br>
                     <div style="width: 90%;
-                                                                                   height: 30%;
-                                                                                   background-color: rgb(244, 240, 240);  
-                                                                                   margin: 0 auto;
-                                                                                   
-                                                                                   margin-top: 10px;">
+                                                                                                                height: 30%;
+                                                                                                                background-color: rgb(244, 240, 240);  
+                                                                                                                margin: 0 auto;
+                                                                                                                
+                                                                                                                margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
                             <img src="sit-up.png" width="72" height="70">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                
+                            <div style="font-family: 'Oswald';
+                                                                                                           font-size: 17px;
+                                                                                                           margin-left: 50%;
+                                                                                                           margin-top: -13.5%;">
                                 Situp
+                
+                                <div style="
+                                                                                                                                     
+                                                                                                                                     color: rgb(109, 192, 188); 
+                                                                                                                                     font-size: 12px; 
+                                                                                                                                     ">
+                                    1 Hour and 5 Minutes
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1 Hour and 5 Minutes
-                            </div>
-
+                
+                
+                
                         </div>
-
-
-
+                
+                
+                
                     </div>
-
-
-
-
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                        <br>
-                    </div>
-
-
+                    <br>
                     <div
                         style="width: 90%;
-                                                                                                        height: 30%;
-                                                                                                        background-color: rgb(244, 240, 240);  
-                                                                                                        margin: 0 auto;
-                                                                                                        
-                                                                                                        margin-top: 10px;">
+                                                                                                                                    height: 30%;
+                                                                                                                                    background-color: rgb(244, 240, 240);  
+                                                                                                                                    margin: 0 auto;
+                                                                                                                                    
+                                                                                                                                    margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
-                            <img src="cyclist.png" width="72" height="70">
-
+                            <img src="cyclist.png" width="72" height="67">
+                
                             <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                                style="font-family: 'Oswald';
+                                                                                                                               font-size: 17px;
+                                                                                                                               margin-left: 50%;
+                                                                                                                               margin-top: -13.5%;">
                                 Outdoor Cycle
+                
+                                <div
+                                    style="
+                                                                                                                                                         
+                                                                                                                                                         color: rgb(109, 192, 188); 
+                                                                                                                                                         font-size: 12px; 
+                                                                                                                                                         ">
+                                    2.51 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                2.51 Miles
-                            </div>
-
+                
+                
+                
                         </div>
-
-
-
+                
+                
+                
                     </div>
+                
+                
                 </div>
 
                 <div id="Fri" class="Button Name" style="display:none">
-
-                    <div
-                        style="font-family: 'Trebuchet MS';
+                
+                    <div style="font-family: 'Trebuchet MS';
                                                                                                             font-size: 15px;
-                                                                                                            color: black;">
-                        <u>Friday ,
-                        October 5</u>
+                                                                                                            color: black;"><u>Friday,
+                            October 5</u>
                     </div>
-
-
-                    <div
-                        style="width: 90%;
+                
+                
+                    <div style="width: 90%;
                                                                                                             height: 30%;
                                                                                                             background-color: rgb(244, 240, 240);  
                                                                                                             margin: 0 auto;
+                                                                                                            
                                                                                                             margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
                             <img src="runner.png" width="72" height="70">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                
+                            <div style="font-family: 'Oswald';
+                                                                                                       font-size: 17px;
+                                                                                                       margin-left: 50%;
+                                                                                                       margin-top: -13.5%;">
                                 Outdoor Run
+                
+                                <div style="
+                                                                                                                                 
+                                                                                                                                 color: rgb(109, 192, 188); 
+                                                                                                                                 font-size: 12px; 
+                                                                                                                                 ">
+                                    1.13 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1.13 Miles
-                            </div>
-
+                
+                
+                
                         </div>
-
-
-
+                
+                
+                
                     </div>
-
-
-                    <div style="width: 90%;
-                                                                                                   height: 30%;
-                                                                                                   background-color: rgb(244, 240, 240);  
-                                                                                                   margin: 0 auto;
-                                                                                                   
-                                                                                                   margin-top: 10px;">
-                        <div style="padding-top: 0px; margin-left: -210px;">
-                            <img src="sit-up.png" width="72" height="70">
-
-                            <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                Situp
-                            </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1 Hour and 5 Minutes
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-
-
-
-
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                        <br>
-                    </div>
-
-
+                    <br>
                     <div
                         style="width: 90%;
-                                                                                                                        height: 30%;
-                                                                                                                        background-color: rgb(244, 240, 240);  
-                                                                                                                        margin: 0 auto;
-                                                                                                                        
-                                                                                                                        margin-top: 10px;">
+                                                                                                                                height: 30%;
+                                                                                                                                background-color: rgb(244, 240, 240);  
+                                                                                                                                margin: 0 auto;
+                                                                                                                                
+                                                                                                                                margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
-                            <img src="cyclist.png" width="72" height="70">
-
+                            <img src="sit-up.png" width="72" height="70">
+                
                             <div
-                                style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                Outdoor Cycle
+                                style="font-family: 'Oswald';
+                                                                                                                           font-size: 17px;
+                                                                                                                           margin-left: 50%;
+                                                                                                                           margin-top: -13.5%;">
+                                Situp
+                
+                                <div
+                                    style="
+                                                                                                                                                     
+                                                                                                                                                     color: rgb(109, 192, 188); 
+                                                                                                                                                     font-size: 12px; 
+                                                                                                                                                     ">
+                                    1 Hour and 5 Minutes
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div
-                                style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                2.51 Miles
-                            </div>
-
+                
+                
+                
                         </div>
-
-
-
+                
+                
+                
                     </div>
+                    <br>
+                    <div
+                        style="width: 90%;
+                                                                                                                                                    height: 30%;
+                                                                                                                                                    background-color: rgb(244, 240, 240);  
+                                                                                                                                                    margin: 0 auto;
+                                                                                                                                                    
+                                                                                                                                                    margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="cyclist.png" width="72" height="67">
+                
+                            <div
+                                style="font-family: 'Oswald';
+                                                                                                                                               font-size: 17px;
+                                                                                                                                               margin-left: 50%;
+                                                                                                                                               margin-top: -13.5%;">
+                                Outdoor Cycle
+                
+                                <div
+                                    style="
+                                                                                                                                                                         
+                                                                                                                                                                         color: rgb(109, 192, 188); 
+                                                                                                                                                                         font-size: 12px; 
+                                                                                                                                                                         ">
+                                    2.51 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
+                            </div>
+                
+                
+                
+                        </div>
+                
+                
+                
+                    </div>
+                
+                
                 </div>
 
                 <div id="Sat" class="Button Name" style="display:none">
                 
-                    <div
-                        style="font-family: 'Trebuchet MS';
-                                                                                                                            font-size: 15px;
-                                                                                                                            color: black;">
-                        <u>Saturday ,
-                        October 6</u>
-                    </div>
-                
-                
-                    <div
-                        style="width: 90%;
-                                                                                                                            height: 30%;
-                                                                                                                            background-color: rgb(244, 240, 240);  
-                                                                                                                            margin: 0 auto;
-                                                                                                                            margin-top: 10px;">
-                        <div style="padding-top: 0px; margin-left: -210px;">
-                            <img src="runner.png" width="72" height="70">
-                
-                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                Outdoor Run
-                            </div>
-                
-                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1.13 Miles
-                            </div>
-                
-                        </div>
-                
-                
-                
+                    <div style="font-family: 'Trebuchet MS';
+                                                                                                            font-size: 15px;
+                                                                                                            color: black;"><u>Saturday,
+                            October 6</u>
                     </div>
                 
                 
                     <div style="width: 90%;
-                                                                                                                   height: 30%;
-                                                                                                                   background-color: rgb(244, 240, 240);  
-                                                                                                                   margin: 0 auto;
-                                                                                                                   
-                                                                                                                   margin-top: 10px;">
+                                                                                                            height: 30%;
+                                                                                                            background-color: rgb(244, 240, 240);  
+                                                                                                            margin: 0 auto;
+                                                                                                            
+                                                                                                            margin-top: 10px;">
+                        <div style="padding-top: 0px; margin-left: -210px;">
+                            <img src="runner.png" width="72" height="70">
+                
+                            <div style="font-family: 'Oswald';
+                                                                                                       font-size: 17px;
+                                                                                                       margin-left: 50%;
+                                                                                                       margin-top: -13.5%;">
+                                Outdoor Run
+                
+                                <div style="
+                                                                                                                                 
+                                                                                                                                 color: rgb(109, 192, 188); 
+                                                                                                                                 font-size: 12px; 
+                                                                                                                                 ">
+                                    1.13 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
+                            </div>
+                
+                
+                
+                        </div>
+                
+                
+                
+                    </div>
+                    <br>
+                    <div
+                        style="width: 90%;
+                                                                                                                                height: 30%;
+                                                                                                                                background-color: rgb(244, 240, 240);  
+                                                                                                                                margin: 0 auto;
+                                                                                                                                
+                                                                                                                                margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
                             <img src="sit-up.png" width="72" height="70">
                 
-                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                            <div
+                                style="font-family: 'Oswald';
+                                                                                                                           font-size: 17px;
+                                                                                                                           margin-left: 50%;
+                                                                                                                           margin-top: -13.5%;">
                                 Situp
+                
+                                <div
+                                    style="
+                                                                                                                                                     
+                                                                                                                                                     color: rgb(109, 192, 188); 
+                                                                                                                                                     font-size: 12px; 
+                                                                                                                                                     ">
+                                    1 Hour and 5 Minutes
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
                 
-                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1 Hour and 5 Minutes
-                            </div>
+                
                 
                         </div>
                 
                 
                 
                     </div>
-                
-                
-                
-                
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                        <br>
-                    </div>
-                
-                
+                    <br>
                     <div
                         style="width: 90%;
-                                                                                                                                        height: 30%;
-                                                                                                                                        background-color: rgb(244, 240, 240);  
-                                                                                                                                        margin: 0 auto;
-                                                                                                                                        
-                                                                                                                                        margin-top: 10px;">
+                                                                                                                                                    height: 30%;
+                                                                                                                                                    background-color: rgb(244, 240, 240);  
+                                                                                                                                                    margin: 0 auto;
+                                                                                                                                                    
+                                                                                                                                                    margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
-                            <img src="cyclist.png" width="72" height="70">
+                            <img src="cyclist.png" width="72" height="67">
                 
-                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                            <div
+                                style="font-family: 'Oswald';
+                                                                                                                                               font-size: 17px;
+                                                                                                                                               margin-left: 50%;
+                                                                                                                                               margin-top: -13.5%;">
                                 Outdoor Cycle
+                
+                                <div
+                                    style="
+                                                                                                                                                                         
+                                                                                                                                                                         color: rgb(109, 192, 188); 
+                                                                                                                                                                         font-size: 12px; 
+                                                                                                                                                                         ">
+                                    2.51 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
                 
-                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                2.51 Miles
-                            </div>
+                
                 
                         </div>
                 
                 
                 
                     </div>
+                
+                
                 </div>
 
                 <div id="Sun" class="Button Name" style="display:none">
                 
-                    <div
-                        style="font-family: 'Trebuchet MS';
-                                                                                                                                            font-size: 15px;
-                                                                                                                                            color: black;">
-                        <u>Sunday ,
-                        October 7</u>
+                    <div style="font-family: 'Trebuchet MS';
+                                                                                                            font-size: 15px;
+                                                                                                            color: black;"><u>Sunday,
+                            October 7</u>
                     </div>
                 
                 
-                    <div
-                        style="width: 90%;
-                                                                                                                                            height: 30%;
-                                                                                                                                            background-color: rgb(244, 240, 240);  
-                                                                                                                                            margin: 0 auto;
-                                                                                                                                            margin-top: 10px;">
+                    <div style="width: 90%;
+                                                                                                            height: 30%;
+                                                                                                            background-color: rgb(244, 240, 240);  
+                                                                                                            margin: 0 auto;
+                                                                                                            
+                                                                                                            margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
                             <img src="runner.png" width="72" height="70">
                 
-                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                            <div style="font-family: 'Oswald';
+                                                                                                       font-size: 17px;
+                                                                                                       margin-left: 50%;
+                                                                                                       margin-top: -13.5%;">
                                 Outdoor Run
+                
+                                <div style="
+                                                                                                                                 
+                                                                                                                                 color: rgb(109, 192, 188); 
+                                                                                                                                 font-size: 12px; 
+                                                                                                                                 ">
+                                    1.13 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
                 
-                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1.13 Miles
-                            </div>
+                
                 
                         </div>
                 
                 
                 
                     </div>
-                
-                
+                    <br>
                     <div
                         style="width: 90%;
-                                                                                                                                   height: 30%;
-                                                                                                                                   background-color: rgb(244, 240, 240);  
-                                                                                                                                   margin: 0 auto;
-                                                                                                                                   
-                                                                                                                                   margin-top: 10px;">
+                                                                                                                                height: 30%;
+                                                                                                                                background-color: rgb(244, 240, 240);  
+                                                                                                                                margin: 0 auto;
+                                                                                                                                
+                                                                                                                                margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
                             <img src="sit-up.png" width="72" height="70">
                 
-                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                            <div
+                                style="font-family: 'Oswald';
+                                                                                                                           font-size: 17px;
+                                                                                                                           margin-left: 50%;
+                                                                                                                           margin-top: -13.5%;">
                                 Situp
+                
+                                <div
+                                    style="
+                                                                                                                                                     
+                                                                                                                                                     color: rgb(109, 192, 188); 
+                                                                                                                                                     font-size: 12px; 
+                                                                                                                                                     ">
+                                    1 Hour and 5 Minutes
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
                 
-                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                1 Hour and 5 Minutes
-                            </div>
+                
                 
                         </div>
                 
                 
                 
                     </div>
-                
-                
-                
-                
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                        <br>
-                    </div>
-                
-                
+                    <br>
                     <div
                         style="width: 90%;
-                                                                                                                                                        height: 30%;
-                                                                                                                                                        background-color: rgb(244, 240, 240);  
-                                                                                                                                                        margin: 0 auto;
-                                                                                                                                                        
-                                                                                                                                                        margin-top: 10px;">
+                                                                                                                                                    height: 30%;
+                                                                                                                                                    background-color: rgb(244, 240, 240);  
+                                                                                                                                                    margin: 0 auto;
+                                                                                                                                                    
+                                                                                                                                                    margin-top: 10px;">
                         <div style="padding-top: 0px; margin-left: -210px;">
-                            <img src="cyclist.png" width="72" height="70">
+                            <img src="cyclist.png" width="72" height="67">
                 
-                            <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
+                            <div
+                                style="font-family: 'Oswald';
+                                                                                                                                               font-size: 17px;
+                                                                                                                                               margin-left: 50%;
+                                                                                                                                               margin-top: -13.5%;">
                                 Outdoor Cycle
+                
+                                <div
+                                    style="
+                                                                                                                                                                         
+                                                                                                                                                                         color: rgb(109, 192, 188); 
+                                                                                                                                                                         font-size: 12px; 
+                                                                                                                                                                         ">
+                                    2.51 Miles
+                                    <br><select id="dropdownID" onchange="dropSelect();">
+                                        <option>--Status--</option>
+                                        <option>Completed</option>
+                                        <option>Not Completed</option>
+                                    </select>
+                                </div>
                             </div>
                 
-                            <div style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                2.51 Miles
-                            </div>
+                
                 
                         </div>
                 
                 
                 
                     </div>
+                
+                
                 </div>
-
-
-
-
 
             </div>
 
             <div id="start a workout" style="display:none">
-                <img class="back_button" src="Back Button.png" onclick = "backButton()"></img>
+                
+
                 <div class="info">Click on the workout program you want to start</div><br>
 
                 <div onclick = "startWorkout()"
@@ -932,7 +1159,10 @@
             </div>
 
             <div id="form" style="display:none">
-                <img class="back_button" src="Back Button.png" onclick="backButton()"></img>
+                <!-- <img class="back_button" src="Back Button.png" onclick="backButton()"></img> -->
+                <!-- <div class="back_button">
+                    <i class="fa fa-arrow-left" onclick="backButton()"></i>
+                </div> -->
                 <div style=" font-family: 'Trebuchet MS'; color: gray;">We are sorry but this program is currently not running.
                 Click the back button to go back to the Workout Section</div>
                 <!-- <div id="form_desc" class="info"> Please enter your information so we can track your progress. This only

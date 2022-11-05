@@ -223,6 +223,7 @@ function open_todo_list() {
     document.getElementById('activity').style.display = "none";
     document.getElementById('sub_activity').style.display = "none";
     document.getElementById('sub_options').style.display = "none";
+    document.getElementById('back_button').style.display = "";
     
 }
 
@@ -232,6 +233,7 @@ function personal_workout() {
     document.getElementById('activity').style.display = "none";
     document.getElementById('sub_activity').style.display = "none";
     document.getElementById('sub_options').style.display = "none";
+    document.getElementById('back_button').style.display = "";
     
 }
 
@@ -269,4 +271,5 @@ function backButton() {
     document.getElementById('buttons').style.display = "";
     document.getElementById('sub_options').style.display = "";
     document.getElementById('sub_activity').style.display = "";
+    document.getElementById('back_button').style.display = "none";
 }
