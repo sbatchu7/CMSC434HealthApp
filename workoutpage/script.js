@@ -224,6 +224,7 @@ function open_todo_list() {
     document.getElementById('sub_activity').style.display = "none";
     document.getElementById('sub_options').style.display = "none";
     document.getElementById('back_button').style.display = "";
+    document.getElementById('plus_btn').style.display = "";
     
 }
 
@@ -272,4 +273,5 @@ function backButton() {
     document.getElementById('sub_options').style.display = "";
     document.getElementById('sub_activity').style.display = "";
     document.getElementById('back_button').style.display = "none";
+    document.getElementById('plus_btn').style.display = "none";
 }

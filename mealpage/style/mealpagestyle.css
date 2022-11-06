@@ -88,12 +88,13 @@
 
 .home_icon {
     position: absolute;
-    top: 16px;
-    right: 8px;
+    top: 13px;
+    right: 20px;
     float: right;
     width: auto;
     height: 50%;
     font-size: 35px;
+    color: black;
 }
 
 .back_image {
