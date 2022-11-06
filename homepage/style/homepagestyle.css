@@ -112,7 +112,7 @@ input {
 
 .title {
     position: absolute;
-    color: #363535;
+    color: black;
     font-size: 30px;
     font-family: 'Oswald';
     top: 8px;
@@ -126,7 +126,8 @@ input {
     float: right;
     width: auto;
     height: 50%;
-    font-size: 35px;
+    font-size: 30px;
+    color: black;
 }
 
 .back_image {
