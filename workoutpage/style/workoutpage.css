@@ -122,8 +122,8 @@ input {
 
 .home_icon {
     position: absolute;
-    top: 16px;
-    right: 8px;
+    top: 13px;
+    right: 20px;
     float: right;
     width: auto;
     height: 50%;
@@ -321,10 +321,10 @@ input {
 
 .popup .close {
     position: absolute;
-    top: 0px;
+    top: -20px;
     right: 10px;
     transition: all 200ms;
-    font-size: 20px;
+    font-size: 50px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
