@@ -101,3 +101,7 @@ function funcOpen(whatButton) {
       var yourImg = document.getElementById('yourImgId1');
       yourImg.style.height = '30%';
     }
+    function closeboard1() {
+      var yourImg = document.getElementById('yourImgId1');
+      yourImg.style.height = '0%';
+    }
