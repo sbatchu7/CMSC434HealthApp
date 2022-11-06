@@ -1,3 +1,5 @@
+
+
 function expandRunPopup() {
     var yourBlurId = document.getElementById('yourBlurId');
     yourBlurId.style.backdropFilter = `blur(10px)`;
@@ -76,6 +78,11 @@ function expandMealSearchPopup() {
     yourMealSearchTitle.style.width = `60%`;
     yourMealSearchTitle.style.height = `100%`;
     yourMealSearchTitle.style.fontSize = '35px';
+
+    var yourImg = document.getElementById('yourImgId');
+    yourImg.style.height = '0%';
+
+    
 }
 
 function closeMealSearchPopup() {

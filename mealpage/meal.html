@@ -1,1959 +1,1304 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="style/medicinepagestyle.css">
-        <link rel="stylesheet" href="style/mealpagestyle.css">
-        <link rel="stylesheet" href="style/activitycircle.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-        
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
-    </head>
+<head>
+    <link rel="stylesheet" href="style/medicinepagestyle.css">
+    <link rel="stylesheet" href="style/mealpagestyle.css">
+    <link rel="stylesheet" href="style/mealpagepopup.css">
+    <link rel="stylesheet" href="style/activitycircle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 
-    
-    <body style="background-color:rgb(191, 219, 217);">
-        <div class="box">
-            <div class="container">        
-                <img class="back_image" src="splash.jpg" alt="background">
-                <div class="title">Meal Plan</div>
-                <a href="../mealpage/mealpreference.html">
-                    <div class="home_icon"><i class="fa fa-plus-circle" ></i></div> 
-                </a>       
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="popup.js"></script> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body style="background-color:rgb(191, 219, 217);">
+    <div class="box">
+        <div class="container">
+            <img class="back_image" src="splash.jpg" alt="background">
+            <div class="title">Meal Plan</div>
+            <a href="../mealpage/mealpreference.html">
+                <div class="home_icon"><i class="fa fa-plus-circle"></i></div>
+            </a>
+        </div>
+        <!-- Comment -->
+        <div class="scroll">
+            <div class="reminder">Based on your preferences, here is the meal plan for today.
+
             </div>
-            <!-- Comment -->
-            <div class="scroll">
-                        <div class = "reminder">Based on your preferences, here is the meal plan for today.
-                        
-            </div>
-            <div style = "float: left; margin-top: 20px;font-size:35" >
+            <div style="float: left; margin-top: 20px;font-size:35">
                 <i class="fa fa-caret-left" aria-hidden="true"></i>
             </div>
-            
-                        <div class="scrollmenu">
 
-                    
-                           
-                            <button class="scrollmenu Mon" onclick="funcOpen('Mon')">Mon <br> <span style="color: gray;margin: 5px 5px;">01</span></button>
-                            <button class="scrollmenu Tues" onclick="funcOpen('Tues')">Tues<br> <span style="color: gray;margin: 5px 5px;">02</span></button>
-                            <button class="scrollmenu Wed" onclick="funcOpen('Wed')">Wed<br> <span style="color: gray;margin: 5px 5px;">03</span></button>
-                            <button class="scrollmenu Thur" onclick="funcOpen('Thur')">Thur<br> <span style="color: gray;margin: 5px 5px;">04</span></button>
-                            <button class="scrollmenu Fri" onclick="funcOpen('Fri')">Fri<br> <span style="color: gray; margin: 5px 5px;">05</span></button>
-                            <button class="scrollmenu Sat" onclick="funcOpen('Sat')">Sat<br> <span style="color: gray;margin: 5px 5px;">06</span></button>
-                            <button class="scrollmenu Sun" onclick="funcOpen('Sun')">Sun<br> <span style="color: gray;margin: 5px 5px;">07</span></button>
-                        
+            <div class="scrollmenu">
+                <button class="scrollmenu Mon" onclick="funcOpen('Mon')">Mon <br> <span
+                        style="color: gray;margin: 5px 5px;">01</span></button>
+                <button class="scrollmenu Tues" onclick="funcOpen('Tues')">Tues<br> <span
+                        style="color: gray;margin: 5px 5px;">02</span></button>
+                <button class="scrollmenu Wed" onclick="funcOpen('Wed')">Wed<br> <span
+                        style="color: gray;margin: 5px 5px;">03</span></button>
+                <button class="scrollmenu Thur" onclick="funcOpen('Thur')">Thur<br> <span
+                        style="color: gray;margin: 5px 5px;">04</span></button>
+                <button class="scrollmenu Fri" onclick="funcOpen('Fri')">Fri<br> <span
+                        style="color: gray; margin: 5px 5px;">05</span></button>
+                <button class="scrollmenu Sat" onclick="funcOpen('Sat')">Sat<br> <span
+                        style="color: gray;margin: 5px 5px;">06</span></button>
+                <button class="scrollmenu Sun" onclick="funcOpen('Sun')">Sun<br> <span
+                        style="color: gray;margin: 5px 5px;">07</span></button>
 
-                        </div>
-                          
-            <div style = "float: right; margin-top: -55px;font-size:35" >
+
+            </div>
+
+            <div style="float: right; margin-top: -55px;font-size:35">
                 <i class="fa fa-caret-right" aria-hidden="true"></i>
             </div>
-                          
-                        <div id="Mon" class="Button Name">
-                            
-                            <div style = "font-family: 'Trebuchet MS';
+
+            <div id="Mon" class="Button Name">
+
+                <div style="font-family: 'Oswald';
                             font-size: 15px;
                             color: black;"><u>Monday, October 1</u>
-                            </div>
+                </div>
 
-                            <div style = "font-family: 'Trebuchet MS';
+                <div style="font-family: 'Oswald';
                                     font-size: 25px;
-                                    margin-right: 170px;
+                                    margin-right: 200px;
                                     margin-top: 10px;
-                                    color: black ">Breakfast 
+                                    color: black ">Breakfast
+                </div>
 
-                                   
-                            </div>
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
 
-                            <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                            
-                           <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                            <a href="#popup1"  style = "color: black;">
-                                <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                                
-                            </a>
-                           </div>
-                            
-                          
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup1" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
 
+                    </a>
+                </div>
 
-                            <div id="popup1" class="overlay">
-                                <div class="popup">
-                                    Modify Your Breakfast Here...
-                                    <a class="close" href="#">&times;</a>
-                                    
-                                </div>
-                            </div>
-                            
-                                    
-                            <div style = "width: 90%;
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        Modify Your Breakfast Here...
+                        <a class="close" href="#">&times;</a>
+
+                    </div>
+                </div>
+
+                <div style="width: 90%;
                             height: 30%;
                             background-color: rgb(244, 240, 240);  
                             margin: 0 auto;
                             
-                            margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="ACAI.jpeg" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
-                                        </div>
+                            margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="ACAI.jpeg" width="72" height="70">
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
-                                        </div>
-                                        
-                                    </div>
-                            
-                                   
+                        <div style="margin-top: -60px; margin-left: 50%; color: black; font-family: 'Oswald'; font-size: 19px;">
+                            Strawberry Acai Bowl
+                        </div>
 
-                           </div>
+                        <div
+                            style="margin-bottom: -100px; margin-left: 33%; color: gray; font-family: 'Oswald'; color: rgb(109, 192, 188);">
+                            250 calories
+                        </div>
+
+                        <div style="float: right; margin-top: 17%; margin-right: 1%;">Show More <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div>
 
 
-                           <div style = "font-family: 'Trebuchet MS';
+                <div style="font-family: 'Oswald';
                            font-size: 25px;
-                           margin-right: 215px;
+                           margin-right: 235px;
                            margin-top: 10px;
-                           color: black ">Lunch 
-
-          
-                          
-                            </div>
-
-                   <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                   
-                  <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                   <a href="#popup2"  style = "color: black;">
-                       <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                       
-                   </a>
-                  </div>
-                   
-                 
+                           color: black ">Lunch
 
 
-                   <div id="popup2" class="overlay">
-                       <div class="popup">
-                           Modify Your Lunch Here...
-                           <a class="close" href="#">&times;</a>
-                           
-                       </div>
-                   </div>
-                   
-                           
-                   <div style = "width: 90%;
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup2" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+
+
+                <div id="popup2" class="overlay">
+                    <div class="popup">
+                        Modify Your Lunch Here...
+                        <a class="close" href="#">&times;</a>
+
+                    </div>
+                </div>
+
+
+                <div style="width: 90%;
                    height: 30%;
                    background-color: rgb(244, 240, 240);  
                    margin: 0 auto;
-                   
-                   margin-top: 10px;"> 
-                          <div style = "padding-top: 0px; margin-left: -210px;">
-                            <img src="Salmon.jpeg" width="72" height="70">
-                               
-                               <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                   Salmon Over Rice
-                               </div>
+                   margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Salmon.jpeg" width="72" height="70">
 
-                               <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                   500 calories
-                               </div>
-                               
-                           </div>
-                   
-                          
+                        <div style="margin-top: -60px; margin-left: 45%; color: black; font-family: 'Oswald'; font-size: 19px;">
+                            Salmon Over Rice
+                        </div>
 
-                  </div>
+                        <div
+                            style="margin-bottom: -100px; margin-left: 34%; color: gray; font-family: 'Oswald'; color: rgb(109, 192, 188);">
+                            500 calories
+                        </div>
+
+                        <div style="float: right; margin-top: 17%; margin-right: 1%;">Show More <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
 
 
-                  <!-- Dinner -->
-                                    <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <!-- Dinner -->
+                <div style="font-family: 'Oswald';
                                     font-size: 25px;
-                                    margin-right: 208px;
+                                    margin-right: 225px;
                                     margin-top: 10px;
-                                    color: black ">Dinner 
+                                    color: black ">Dinner
 
-                    
-                                    
-                                    </div>
 
-                            <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                            
-                            <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                            <a href="#popup3"  style = "color: black;">
-                                <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                                
-                            </a>
-                            </div>
-                            
-                        
-                            <div id="popup3" class="overlay">
-                                <div class="popup">
-                                    Modify Your Dinner Here...
-                                    <a class="close" href="#">&times;</a>
-                                    
-                                </div>
-                            </div>
-                            
-                                    
-                            <div style = "width: 90%;
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup3" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+                <div id="popup3" class="overlay">
+                    <div class="popup">
+                        Modify Your Dinner Here...
+                        <a class="close" href="#">&times;</a>
+
+                    </div>
+                </div>
+
+
+                <div style="width: 90%;
                                         height: 30%;
                                         background-color: rgb(244, 240, 240);  
                                         margin: 0 auto;
                                         
-                                        margin-top: 10px;"> 
-                                     <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Salad.jpeg" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Chicken Ceaser Salad
-                                        </div>
+                                        margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Salad.jpeg" width="72" height="70">
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            700 calories
-                                        </div>
-                                        
-                                     </div>
-                         </div>
+                        <div style="margin-top: -60px; margin-left: 50%; color: black; font-family: 'Oswald'; font-size: 19px;">
+                            Chicken Ceaser Salad
+                        </div>
+
+                        <div
+                            style="margin-bottom: -90px; margin-left: 34%; color: gray; font-family: 'Oswald'; color: rgb(109, 192, 188);">
+                            700 calories
+                        </div>
+                        
+                        <div style="float: right; margin-top: 15%; margin-right: 1%;">Show More <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="Tues" class="Button Name" style="display:none">
-                    <div style = "font-family: 'Trebuchet MS';
+                <div style="width: 100%; height: 10%;"></div>
+            </div>
+
+            <div id="Tues" class="Button Name" style="display:none">
+                <div style="font-family: 'Oswald';
                     font-size: 15px;
                     color: black;"><u>Tuesday, October 2</u>
-                    </div>
+                </div>
 
-                    <div style = "font-family: 'Trebuchet MS';
+                <div style="font-family: 'Oswald';
                             font-size: 25px;
                             margin-right: 170px;
                             margin-top: 10px;
-                            color: black ">Breakfast 
+                            color: black ">Breakfast
 
-                    </div>
+                </div>
 
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                   <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup4"  style = "color: black;">
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup4" style="color: black;">
                         <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
+
                     </a>
-                   </div>
-                    
-                  
+                </div>
 
 
-                    <div id="popup4" class="overlay">
-                        <div class="popup">
-                            Modify Your Breakfast Here...
-                            <a class="close" href="#">&times;</a>
-                            
-                        </div>
+
+
+                <div id="popup4" class="overlay">
+                    <div class="popup">
+                        Modify Your Breakfast Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-                    
-                            
-                    <div style = "width: 90%;
+                </div>
+
+
+                <div style="width: 90%;
                     height: 30%;
                     background-color: rgb(244, 240, 240);  
                     margin: 0 auto;
                     
-                    margin-top: 10px;"> 
-                            <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Oatmeal.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Peanut Butter Oatmeal
-                                </div>
+                    margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Oatmeal.jpeg" width="72" height="70">
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    250 calories
-                                </div>
-                                
-                            </div>
-                    
-                           
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Peanut Butter Oatmeal
+                        </div>
 
-                   </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            250 calories
+                        </div>
+
+                    </div>
 
 
-                   <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <div style="font-family: 'Oswald';
                    font-size: 25px;
                    margin-right: 215px;
                    margin-top: 10px;
-                   color: black ">Lunch 
+                   color: black ">Lunch
 
-  
-                  
+
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup5" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+
+
+                <div id="popup5" class="overlay">
+                    <div class="popup">
+                        Modify Your Lunch Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-
-           <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-           
-          <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-           <a href="#popup5"  style = "color: black;">
-               <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-               
-           </a>
-          </div>
-           
-         
+                </div>
 
 
-           <div id="popup5" class="overlay">
-               <div class="popup">
-                   Modify Your Lunch Here...
-                   <a class="close" href="#">&times;</a>
-                   
-               </div>
-           </div>
-           
-                   
-           <div style = "width: 90%;
+                <div style="width: 90%;
            height: 30%;
            background-color: rgb(244, 240, 240);  
            margin: 0 auto;
            
-           margin-top: 10px;"> 
-                  <div style = "padding-top: 0px; margin-left: -210px;">
-                    <img src="Chicken Rice.jpeg" width="72" height="70">
-                       
-                       <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                           Chicken Over Rice
-                       </div>
+           margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Chicken Rice.jpeg" width="72" height="70">
 
-                       <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                           500 calories
-                       </div>
-                       
-                   </div>
-           
-                  
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Chicken Over Rice
+                        </div>
 
-          </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            500 calories
+                        </div>
+
+                    </div>
 
 
-          <!-- Dinner -->
-                            <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <!-- Dinner -->
+                <div style="font-family: 'Oswald';
                             font-size: 25px;
                             margin-right: 208px;
                             margin-top: 10px;
-                            color: black ">Dinner 
+                            color: black ">Dinner
 
-            
-                            
-                            </div>
 
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup6"  style = "color: black;">
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup6" style="color: black;">
                         <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
+
                     </a>
+                </div>
+
+
+                <div id="popup6" class="overlay">
+                    <div class="popup">
+                        Modify Your Dinner Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-                    
-                
-                    <div id="popup6" class="overlay">
-                        <div class="popup">
-                            Modify Your Dinner Here...
-                            <a class="close" href="#">&times;</a>
-                            
-                        </div>
-                    </div>
-                    
-                            
-                    <div style = "width: 90%;
+                </div>
+
+
+                <div style="width: 90%;
                                 height: 30%;
                                 background-color: rgb(244, 240, 240);  
                                 margin: 0 auto;
                                 
-                                margin-top: 10px;"> 
-                             <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Salad.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Chicken Ceaser Salad
-                                </div>
+                                margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Salad.jpeg" width="72" height="70">
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    700 calories
-                                </div>
-                                
-                             </div>
-  
-         
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Chicken Ceaser Salad
+                        </div>
 
-                 </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            700 calories
+                        </div>
+
+                    </div>
+
+
+
                 </div>
-        
-                <div id="Fri" class="Button Name" style="display:none">
-                    <div style = "font-family: 'Trebuchet MS';
+            </div>
+
+            <div id="Fri" class="Button Name" style="display:none">
+                <div style="font-family: 'Oswald';
                     font-size: 15px;
                     color: black;"><u>Friday, October 5</u>
-                    </div>
+                </div>
 
-                    <div style = "font-family: 'Trebuchet MS';
+                <div style="font-family: 'Oswald';
                             font-size: 25px;
                             margin-right: 170px;
                             margin-top: 10px;
-                            color: black ">Breakfast 
+                            color: black ">Breakfast
 
-           
-                           
-                    </div>
 
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                   <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup4"  style = "color: black;">
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup4" style="color: black;">
                         <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
+
                     </a>
-                   </div>
-                    
-                  
+                </div>
 
 
-                    <div id="popup4" class="overlay">
-                        <div class="popup">
-                            Modify Your Breakfast Here...
-                            <a class="close" href="#">&times;</a>
-                            
-                        </div>
+
+
+                <div id="popup4" class="overlay">
+                    <div class="popup">
+                        Modify Your Breakfast Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-                    
-                            
-                    <div style = "width: 90%;
+                </div>
+
+
+                <div style="width: 90%;
                     height: 30%;
                     background-color: rgb(244, 240, 240);  
                     margin: 0 auto;
                     
-                    margin-top: 10px;"> 
-                            <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Oatmeal.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Peanut Butter Oatmeal
-                                </div>
+                    margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Oatmeal.jpeg" width="72" height="70">
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    250 calories
-                                </div>
-                                
-                            </div>
-                    
-                           
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Peanut Butter Oatmeal
+                        </div>
 
-                   </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            250 calories
+                        </div>
+
+                    </div>
 
 
-                   <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <div style="font-family: 'Oswald';
                    font-size: 25px;
                    margin-right: 215px;
                    margin-top: 10px;
-                   color: black ">Lunch 
+                   color: black ">Lunch
 
-  
-                  
+
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup5" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+
+
+                <div id="popup5" class="overlay">
+                    <div class="popup">
+                        Modify Your Lunch Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-
-           <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-           
-          <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-           <a href="#popup5"  style = "color: black;">
-               <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-               
-           </a>
-          </div>
-           
-         
+                </div>
 
 
-           <div id="popup5" class="overlay">
-               <div class="popup">
-                   Modify Your Lunch Here...
-                   <a class="close" href="#">&times;</a>
-                   
-               </div>
-           </div>
-           
-                   
-           <div style = "width: 90%;
+                <div style="width: 90%;
            height: 30%;
            background-color: rgb(244, 240, 240);  
            margin: 0 auto;
            
-           margin-top: 10px;"> 
-                  <div style = "padding-top: 0px; margin-left: -210px;">
-                    <img src="Chicken Rice.jpeg" width="72" height="70">
-                       
-                       <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                           Chicken Over Rice
-                       </div>
+           margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Chicken Rice.jpeg" width="72" height="70">
 
-                       <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                           500 calories
-                       </div>
-                       
-                   </div>
-           
-                  
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Chicken Over Rice
+                        </div>
 
-          </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            500 calories
+                        </div>
+
+                    </div>
 
 
-          <!-- Dinner -->
-                            <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <!-- Dinner -->
+                <div style="font-family: 'Oswald';
                             font-size: 25px;
                             margin-right: 208px;
                             margin-top: 10px;
-                            color: black ">Dinner 
+                            color: black ">Dinner
 
-            
-                            
-                            </div>
 
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup6"  style = "color: black;">
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup6" style="color: black;">
                         <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
+
                     </a>
+                </div>
+
+
+                <div id="popup6" class="overlay">
+                    <div class="popup">
+                        Modify Your Dinner Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-                    
-                
-                    <div id="popup6" class="overlay">
-                        <div class="popup">
-                            Modify Your Dinner Here...
-                            <a class="close" href="#">&times;</a>
-                            
-                        </div>
-                    </div>
-                    
-                            
-                    <div style = "width: 90%;
+                </div>
+
+
+                <div style="width: 90%;
                                 height: 30%;
                                 background-color: rgb(244, 240, 240);  
                                 margin: 0 auto;
                                 
-                                margin-top: 10px;"> 
-                             <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Salad.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Chicken Ceaser Salad
-                                </div>
+                                margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Salad.jpeg" width="72" height="70">
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    700 calories
-                                </div>
-                                
-                             </div>
-  
-         
-
-                 </div>
-                </div>
-
-                <div id="Sun" class="Button Name" style="display:none">
-                    <div style = "font-family: 'Trebuchet MS';
-                    font-size: 15px;
-                    color: black;"><u>Sunday, October 7</u>
-                    </div>
-
-                    <div style = "font-family: 'Trebuchet MS';
-                            font-size: 25px;
-                            margin-right: 170px;
-                            margin-top: 10px;
-                            color: black ">Breakfast 
-
-           
-                           
-                    </div>
-
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                   <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup4"  style = "color: black;">
-                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
-                    </a>
-                   </div>
-                    
-                  
-
-
-                    <div id="popup4" class="overlay">
-                        <div class="popup">
-                            Modify Your Breakfast Here...
-                            <a class="close" href="#">&times;</a>
-                            
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Chicken Ceaser Salad
                         </div>
-                    </div>
-                    
-                            
-                    <div style = "width: 90%;
-                    height: 30%;
-                    background-color: rgb(244, 240, 240);  
-                    margin: 0 auto;
-                    
-                    margin-top: 10px;"> 
-                            <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Oatmeal.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Peanut Butter Oatmeal
-                                </div>
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    250 calories
-                                </div>
-                                
-                            </div>
-                    
-                           
-
-                   </div>
-
-
-                   <div style = "font-family: 'Trebuchet MS';
-                   font-size: 25px;
-                   margin-right: 215px;
-                   margin-top: 10px;
-                   color: black ">Lunch 
-
-  
-                  
-                    </div>
-
-           <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-           
-          <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-           <a href="#popup5"  style = "color: black;">
-               <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-               
-           </a>
-          </div>
-           
-         
-
-
-           <div id="popup5" class="overlay">
-               <div class="popup">
-                   Modify Your Lunch Here...
-                   <a class="close" href="#">&times;</a>
-                   
-               </div>
-           </div>
-           
-                   
-           <div style = "width: 90%;
-           height: 30%;
-           background-color: rgb(244, 240, 240);  
-           margin: 0 auto;
-           
-           margin-top: 10px;"> 
-                  <div style = "padding-top: 0px; margin-left: -210px;">
-                    <img src="Chicken Rice.jpeg" width="72" height="70">
-                       
-                       <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                           Chicken Over Rice
-                       </div>
-
-                       <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                           500 calories
-                       </div>
-                       
-                   </div>
-           
-                  
-
-          </div>
-
-
-          <!-- Dinner -->
-                            <div style = "font-family: 'Trebuchet MS';
-                            font-size: 25px;
-                            margin-right: 208px;
-                            margin-top: 10px;
-                            color: black ">Dinner 
-
-            
-                            
-                            </div>
-
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup6"  style = "color: black;">
-                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
-                    </a>
-                    </div>
-                    
-                
-                    <div id="popup6" class="overlay">
-                        <div class="popup">
-                            Modify Your Dinner Here...
-                            <a class="close" href="#">&times;</a>
-                            
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            700 calories
                         </div>
+
                     </div>
-                    
-                            
-                    <div style = "width: 90%;
-                                height: 30%;
-                                background-color: rgb(244, 240, 240);  
-                                margin: 0 auto;
-                                
-                                margin-top: 10px;"> 
-                             <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Salad.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Chicken Ceaser Salad
-                                </div>
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    700 calories
-                                </div>
-                                
-                             </div>
-  
-         
 
-                 </div>
+
                 </div>
+            </div>
 
-                <div id="Sat" class="Button Name" style="display:none">
-                    <div style = "font-family: 'Trebuchet MS';
+            <div id="Sat" class="Button Name" style="display:none">
+                <div style="font-family: 'Oswald';
                     font-size: 15px;
                     color: black;"><u>Saturday, October 6</u>
-                    </div>
+                </div>
 
-                    <div style = "font-family: 'Trebuchet MS';
+                <div style="font-family: 'Oswald';
                             font-size: 25px;
                             margin-right: 170px;
                             margin-top: 10px;
-                            color: black ">Breakfast 
+                            color: black ">Breakfast
 
-                    </div>
+                </div>
 
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                   <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup4"  style = "color: black;">
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup4" style="color: black;">
                         <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
+
                     </a>
-                   </div>
-                    
-                  
+                </div>
 
 
-                    <div id="popup4" class="overlay">
-                        <div class="popup">
-                            Modify Your Breakfast Here...
-                            <a class="close" href="#">&times;</a>
-                            
-                        </div>
+
+
+                <div id="popup4" class="overlay">
+                    <div class="popup">
+                        Modify Your Breakfast Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-                    
-                            
-                    <div style = "width: 90%;
+                </div>
+
+
+                <div style="width: 90%;
                     height: 30%;
                     background-color: rgb(244, 240, 240);  
                     margin: 0 auto;
                     
-                    margin-top: 10px;"> 
-                            <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Oatmeal.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Peanut Butter Oatmeal
-                                </div>
+                    margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Oatmeal.jpeg" width="72" height="70">
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    250 calories
-                                </div>
-                                
-                            </div>
-                    
-                           
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Peanut Butter Oatmeal
+                        </div>
 
-                   </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            250 calories
+                        </div>
+
+                    </div>
 
 
-                   <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <div style="font-family: 'Oswald';
                    font-size: 25px;
                    margin-right: 215px;
                    margin-top: 10px;
-                   color: black ">Lunch 
+                   color: black ">Lunch
 
-  
-                  
+
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup5" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+
+
+                <div id="popup5" class="overlay">
+                    <div class="popup">
+                        Modify Your Lunch Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-
-           <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-           
-          <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-           <a href="#popup5"  style = "color: black;">
-               <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-               
-           </a>
-          </div>
-           
-         
+                </div>
 
 
-           <div id="popup5" class="overlay">
-               <div class="popup">
-                   Modify Your Lunch Here...
-                   <a class="close" href="#">&times;</a>
-                   
-               </div>
-           </div>
-           
-                   
-           <div style = "width: 90%;
+                <div style="width: 90%;
            height: 30%;
            background-color: rgb(244, 240, 240);  
            margin: 0 auto;
            
-           margin-top: 10px;"> 
-                  <div style = "padding-top: 0px; margin-left: -210px;">
-                    <img src="Chicken Rice.jpeg" width="72" height="70">
-                       
-                       <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                           Chicken Over Rice
-                       </div>
+           margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Chicken Rice.jpeg" width="72" height="70">
 
-                       <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                           500 calories
-                       </div>
-                       
-                   </div>
-           
-                  
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Chicken Over Rice
+                        </div>
 
-          </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            500 calories
+                        </div>
+
+                    </div>
 
 
-          <!-- Dinner -->
-                            <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <!-- Dinner -->
+                <div style="font-family: 'Oswald';
                             font-size: 25px;
                             margin-right: 208px;
                             margin-top: 10px;
-                            color: black ">Dinner 
+                            color: black ">Dinner
 
-            
-                            
-                            </div>
 
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup6"  style = "color: black;">
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup6" style="color: black;">
                         <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
+
                     </a>
+                </div>
+
+
+                <div id="popup6" class="overlay">
+                    <div class="popup">
+                        Modify Your Dinner Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-                    
-                
-                    <div id="popup6" class="overlay">
-                        <div class="popup">
-                            Modify Your Dinner Here...
-                            <a class="close" href="#">&times;</a>
-                            
-                        </div>
-                    </div>
-                    
-                            
-                    <div style = "width: 90%;
+                </div>
+
+
+                <div style="width: 90%;
                                 height: 30%;
                                 background-color: rgb(244, 240, 240);  
                                 margin: 0 auto;
                                 
-                                margin-top: 10px;"> 
-                             <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Salad.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Chicken Ceaser Salad
-                                </div>
+                                margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Salad.jpeg" width="72" height="70">
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    700 calories
-                                </div>
-                                
-                             </div>
-  
-         
-
-                 </div>
-                </div>
-        
-                <div id="Fri" class="Button Name" style="display:none">
-                    <div style = "font-family: 'Trebuchet MS';
-                    font-size: 15px;
-                    color: black;"><u>Friday, October 5</u>
-                    </div>
-
-                    <div style = "font-family: 'Trebuchet MS';
-                            font-size: 25px;
-                            margin-right: 170px;
-                            margin-top: 10px;
-                            color: black ">Breakfast 
-
-           
-                           
-                    </div>
-
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                   <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup4"  style = "color: black;">
-                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
-                    </a>
-                   </div>
-                    
-                  
-
-
-                    <div id="popup4" class="overlay">
-                        <div class="popup">
-                            Modify Your Breakfast Here...
-                            <a class="close" href="#">&times;</a>
-                            
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Chicken Ceaser Salad
                         </div>
-                    </div>
-                    
-                            
-                    <div style = "width: 90%;
-                    height: 30%;
-                    background-color: rgb(244, 240, 240);  
-                    margin: 0 auto;
-                    
-                    margin-top: 10px;"> 
-                            <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Oatmeal.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Peanut Butter Oatmeal
-                                </div>
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    250 calories
-                                </div>
-                                
-                            </div>
-                    
-                           
-
-                   </div>
-
-
-                   <div style = "font-family: 'Trebuchet MS';
-                   font-size: 25px;
-                   margin-right: 215px;
-                   margin-top: 10px;
-                   color: black ">Lunch 
-
-  
-                  
-                    </div>
-
-           <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-           
-          <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-           <a href="#popup5"  style = "color: black;">
-               <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-               
-           </a>
-          </div>
-           
-         
-
-
-           <div id="popup5" class="overlay">
-               <div class="popup">
-                   Modify Your Lunch Here...
-                   <a class="close" href="#">&times;</a>
-                   
-               </div>
-           </div>
-           
-                   
-           <div style = "width: 90%;
-           height: 30%;
-           background-color: rgb(244, 240, 240);  
-           margin: 0 auto;
-           
-           margin-top: 10px;"> 
-                  <div style = "padding-top: 0px; margin-left: -210px;">
-                    <img src="Chicken Rice.jpeg" width="72" height="70">
-                       
-                       <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                           Chicken Over Rice
-                       </div>
-
-                       <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                           500 calories
-                       </div>
-                       
-                   </div>
-           
-                  
-
-          </div>
-
-
-          <!-- Dinner -->
-                            <div style = "font-family: 'Trebuchet MS';
-                            font-size: 25px;
-                            margin-right: 208px;
-                            margin-top: 10px;
-                            color: black ">Dinner 
-
-            
-                            
-                            </div>
-
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup6"  style = "color: black;">
-                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
-                    </a>
-                    </div>
-                    
-                
-                    <div id="popup6" class="overlay">
-                        <div class="popup">
-                            Modify Your Dinner Here...
-                            <a class="close" href="#">&times;</a>
-                            
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            700 calories
                         </div>
+
                     </div>
-                    
-                            
-                    <div style = "width: 90%;
-                                height: 30%;
-                                background-color: rgb(244, 240, 240);  
-                                margin: 0 auto;
-                                
-                                margin-top: 10px;"> 
-                             <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Salad.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Chicken Ceaser Salad
-                                </div>
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    700 calories
-                                </div>
-                                
-                             </div>
-  
-         
 
-                 </div>
+
                 </div>
+            </div>
 
-                <div id="Sun" class="Button Name" style="display:none">
-                    <div style = "font-family: 'Trebuchet MS';
+            <div id="Sun" class="Button Name" style="display:none">
+                <div style="font-family: 'Oswald';
                     font-size: 15px;
                     color: black;"><u>Sunday, October 7</u>
-                    </div>
+                </div>
 
-                    <div style = "font-family: 'Trebuchet MS';
+                <div style="font-family: 'Oswald';
                             font-size: 25px;
                             margin-right: 170px;
                             margin-top: 10px;
-                            color: black ">Breakfast 
+                            color: black ">Breakfast
 
-           
-                           
-                    </div>
 
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                   <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup4"  style = "color: black;">
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup4" style="color: black;">
                         <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
+
                     </a>
-                   </div>
-                    
-                  
+                </div>
 
 
-                    <div id="popup4" class="overlay">
-                        <div class="popup">
-                            Modify Your Breakfast Here...
-                            <a class="close" href="#">&times;</a>
-                            
-                        </div>
+
+
+                <div id="popup4" class="overlay">
+                    <div class="popup">
+                        Modify Your Breakfast Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-                    
-                            
-                    <div style = "width: 90%;
+                </div>
+
+
+                <div style="width: 90%;
                     height: 30%;
                     background-color: rgb(244, 240, 240);  
                     margin: 0 auto;
                     
-                    margin-top: 10px;"> 
-                            <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Oatmeal.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Peanut Butter Oatmeal
-                                </div>
+                    margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Oatmeal.jpeg" width="72" height="70">
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    250 calories
-                                </div>
-                                
-                            </div>
-                    
-                           
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Peanut Butter Oatmeal
+                        </div>
 
-                   </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            250 calories
+                        </div>
+
+                    </div>
 
 
-                   <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <div style="font-family: 'Oswald';
                    font-size: 25px;
                    margin-right: 215px;
                    margin-top: 10px;
-                   color: black ">Lunch 
+                   color: black ">Lunch
 
-  
-                  
+
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup5" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+
+
+                <div id="popup5" class="overlay">
+                    <div class="popup">
+                        Modify Your Lunch Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-
-           <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-           
-          <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-           <a href="#popup5"  style = "color: black;">
-               <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-               
-           </a>
-          </div>
-           
-         
+                </div>
 
 
-           <div id="popup5" class="overlay">
-               <div class="popup">
-                   Modify Your Lunch Here...
-                   <a class="close" href="#">&times;</a>
-                   
-               </div>
-           </div>
-           
-                   
-           <div style = "width: 90%;
+                <div style="width: 90%;
            height: 30%;
            background-color: rgb(244, 240, 240);  
            margin: 0 auto;
            
-           margin-top: 10px;"> 
-                  <div style = "padding-top: 0px; margin-left: -210px;">
-                    <img src="Chicken Rice.jpeg" width="72" height="70">
-                       
-                       <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                           Chicken Over Rice
-                       </div>
+           margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Chicken Rice.jpeg" width="72" height="70">
 
-                       <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                           500 calories
-                       </div>
-                       
-                   </div>
-           
-                  
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Chicken Over Rice
+                        </div>
 
-          </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            500 calories
+                        </div>
+
+                    </div>
 
 
-          <!-- Dinner -->
-                            <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <!-- Dinner -->
+                <div style="font-family: 'Oswald';
                             font-size: 25px;
                             margin-right: 208px;
                             margin-top: 10px;
-                            color: black ">Dinner 
+                            color: black ">Dinner
 
-            
-                            
-                            </div>
 
-                    <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                    
-                    <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                    <a href="#popup6"  style = "color: black;">
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup6" style="color: black;">
                         <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                        
+
                     </a>
+                </div>
+
+
+                <div id="popup6" class="overlay">
+                    <div class="popup">
+                        Modify Your Dinner Here...
+                        <a class="close" href="#">&times;</a>
+
                     </div>
-                    
-                
-                    <div id="popup6" class="overlay">
-                        <div class="popup">
-                            Modify Your Dinner Here...
-                            <a class="close" href="#">&times;</a>
-                            
-                        </div>
-                    </div>
-                    
-                            
-                    <div style = "width: 90%;
+                </div>
+
+
+                <div style="width: 90%;
                                 height: 30%;
                                 background-color: rgb(244, 240, 240);  
                                 margin: 0 auto;
                                 
-                                margin-top: 10px;"> 
-                             <div style = "padding-top: 0px; margin-left: -210px;">
-                                <img src="Salad.jpeg" width="72" height="70">
-                                
-                                <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                    Chicken Ceaser Salad
-                                </div>
+                                margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Salad.jpeg" width="72" height="70">
 
-                                <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                    700 calories
-                                </div>
-                                
-                             </div>
-  
-         
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Chicken Ceaser Salad
+                        </div>
 
-                 </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            700 calories
+                        </div>
+
+                    </div>
+
+
+
                 </div>
-                        
+            </div>
 
-                        <div id="Thur" class="Button Name" style="display:none">
-                            <div style = "font-family: 'Trebuchet MS';
+
+            <div id="Thur" class="Button Name" style="display:none">
+                <div style="font-family: 'Oswald';
                             font-size: 15px;
                             color: black;"><u>Thursday, October 4</u>
-                            </div>
+                </div>
 
-                            <div style = "font-family: 'Trebuchet MS';
+                <div style="font-family: 'Oswald';
                                     font-size: 25px;
                                     margin-right: 170px;
                                     margin-top: 10px;
-                                    color: black ">Breakfast 
-
-                                   
-                            </div>
-
-                            <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                            
-                           <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                            <a href="#popup1"  style = "color: black;">
-                                <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                                
-                            </a>
-                           </div>
-                            
-                          
+                                    color: black ">Breakfast
 
 
-                            <div id="popup1" class="overlay">
-                                <div class="popup">
-                                    Modify Your Breakfast Here...
-                                    <a class="close" href="#">&times;</a>
-                                    
-                                </div>
-                            </div>
-                            
-                                    
-                            <div style = "width: 90%;
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup1" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+
+
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        Modify Your Breakfast Here...
+                        <a class="close" href="#">&times;</a>
+
+                    </div>
+                </div>
+
+
+                <div style="width: 90%;
                             height: 30%;
                             background-color: rgb(244, 240, 240);  
                             margin: 0 auto;
                             
-                            margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="ACAI.jpeg" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Strawberry Acai Bowl
-                                        </div>
+                            margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="ACAI.jpeg" width="72" height="70">
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
-                                        </div>
-                                        
-                                    </div>
-                            
-                                   
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Strawberry Acai Bowl
+                        </div>
 
-                           </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            250 calories
+                        </div>
+
+                    </div>
 
 
-                           <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <div style="font-family: 'Oswald';
                            font-size: 25px;
                            margin-right: 215px;
                            margin-top: 10px;
-                           color: black ">Lunch 
-
-          
-                          
-                            </div>
-
-                   <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                   
-                  <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                   <a href="#popup2"  style = "color: black;">
-                       <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                       
-                   </a>
-                  </div>
-                   
-                 
+                           color: black ">Lunch
 
 
-                   <div id="popup2" class="overlay">
-                       <div class="popup">
-                           Modify Your Lunch Here...
-                           <a class="close" href="#">&times;</a>
-                           
-                       </div>
-                   </div>
-                   
-                           
-                   <div style = "width: 90%;
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup2" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+
+
+                <div id="popup2" class="overlay">
+                    <div class="popup">
+                        Modify Your Lunch Here...
+                        <a class="close" href="#">&times;</a>
+
+                    </div>
+                </div>
+
+
+                <div style="width: 90%;
                    height: 30%;
                    background-color: rgb(244, 240, 240);  
                    margin: 0 auto;
                    
-                   margin-top: 10px;"> 
-                          <div style = "padding-top: 0px; margin-left: -210px;">
-                            <img src="Salmon.jpeg" width="72" height="70">
-                               
-                               <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                   Salmon Over Rice
-                               </div>
+                   margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Salmon.jpeg" width="72" height="70">
 
-                               <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                   500 calories
-                               </div>
-                               
-                           </div>
-                   
-                          
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Salmon Over Rice
+                        </div>
 
-                  </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            500 calories
+                        </div>
+
+                    </div>
 
 
-                  <!-- Dinner -->
-                                    <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <!-- Dinner -->
+                <div style="font-family: 'Oswald';
                                     font-size: 25px;
                                     margin-right: 208px;
                                     margin-top: 10px;
-                                    color: black ">Dinner 
+                                    color: black ">Dinner
 
-                    
-                                    
-                                    </div>
 
-                            <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                            
-                            <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                            <a href="#popup3"  style = "color: black;">
-                                <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                                
-                            </a>
-                            </div>
-                            
-                        
-                            <div id="popup3" class="overlay">
-                                <div class="popup">
-                                    Modify Your Dinner Here...
-                                    <a class="close" href="#">&times;</a>
-                                    
-                                </div>
-                            </div>
-                            
-                                    
-                            <div style = "width: 90%;
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup3" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+                <div id="popup3" class="overlay">
+                    <div class="popup">
+                        Modify Your Dinner Here...
+                        <a class="close" href="#">&times;</a>
+
+                    </div>
+                </div>
+
+
+                <div style="width: 90%;
                                         height: 30%;
                                         background-color: rgb(244, 240, 240);  
                                         margin: 0 auto;
                                         
-                                        margin-top: 10px;"> 
-                                     <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Salad.jpeg" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Chicken Ceaser Salad
-                                        </div>
+                                        margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Salad.jpeg" width="72" height="70">
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            700 calories
-                                        </div>
-                                        
-                                     </div>
-          
-                 
-
-                         </div>
-                        </div>
-                
-                        <div id="Fri" class="Button Name" style="display:none">
-                            <div style = "font-family: 'Trebuchet MS';
-                            font-size: 15px;
-                            color: black;"><u>Friday, October 5</u>
-                            </div>
-
-                            <div style = "font-family: 'Trebuchet MS';
-                                    font-size: 25px;
-                                    margin-right: 170px;
-                                    margin-top: 10px;
-                                    color: black ">Breakfast 
-
-                   
-                                   
-                            </div>
-
-                            <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                            
-                           <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                            <a href="#popup4"  style = "color: black;">
-                                <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                                
-                            </a>
-                           </div>
-                            
-                          
-
-
-                            <div id="popup4" class="overlay">
-                                <div class="popup">
-                                    Modify Your Breakfast Here...
-                                    <a class="close" href="#">&times;</a>
-                                    
-                                </div>
-                            </div>
-                            
-                                    
-                            <div style = "width: 90%;
-                            height: 30%;
-                            background-color: rgb(244, 240, 240);  
-                            margin: 0 auto;
-                            
-                            margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Oatmeal.jpeg" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Peanut Butter Oatmeal
-                                        </div>
-
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
-                                        </div>
-                                        
-                                    </div>
-                            
-                                   
-
-                           </div>
-
-
-                           <div style = "font-family: 'Trebuchet MS';
-                           font-size: 25px;
-                           margin-right: 215px;
-                           margin-top: 10px;
-                           color: black ">Lunch 
-
-          
-                          
-                            </div>
-
-                   <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                   
-                  <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                   <a href="#popup5"  style = "color: black;">
-                       <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                       
-                   </a>
-                  </div>
-                   
-                 
-
-
-                   <div id="popup5" class="overlay">
-                       <div class="popup">
-                           Modify Your Lunch Here...
-                           <a class="close" href="#">&times;</a>
-                           
-                       </div>
-                   </div>
-                   
-                           
-                   <div style = "width: 90%;
-                   height: 30%;
-                   background-color: rgb(244, 240, 240);  
-                   margin: 0 auto;
-                   
-                   margin-top: 10px;"> 
-                          <div style = "padding-top: 0px; margin-left: -210px;">
-                            <img src="Chicken Rice.jpeg" width="72" height="70">
-                               
-                               <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                   Chicken Over Rice
-                               </div>
-
-                               <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                   500 calories
-                               </div>
-                               
-                           </div>
-                   
-                          
-
-                  </div>
-
-
-                  <!-- Dinner -->
-                                    <div style = "font-family: 'Trebuchet MS';
-                                    font-size: 25px;
-                                    margin-right: 208px;
-                                    margin-top: 10px;
-                                    color: black ">Dinner 
-
-                    
-                                    
-                                    </div>
-
-                            <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                            
-                            <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                            <a href="#popup6"  style = "color: black;">
-                                <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                                
-                            </a>
-                            </div>
-                            
-                        
-                            <div id="popup6" class="overlay">
-                                <div class="popup">
-                                    Modify Your Dinner Here...
-                                    <a class="close" href="#">&times;</a>
-                                    
-                                </div>
-                            </div>
-                            
-                                    
-                            <div style = "width: 90%;
-                                        height: 30%;
-                                        background-color: rgb(244, 240, 240);  
-                                        margin: 0 auto;
-                                        
-                                        margin-top: 10px;"> 
-                                     <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Salad.jpeg" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Chicken Ceaser Salad
-                                        </div>
-
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            700 calories
-                                        </div>
-                                        
-                                     </div>
-          
-                 
-
-                         </div>
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Chicken Ceaser Salad
                         </div>
 
-                        <div id="Sun" class="Button Name" style="display:none">
-                            <div style = "font-family: 'Trebuchet MS';
-                            font-size: 15px;
-                            color: black;"><u>Sunday, October 7</u>
-                            </div>
-
-                            <div style = "font-family: 'Trebuchet MS';
-                                    font-size: 25px;
-                                    margin-right: 170px;
-                                    margin-top: 10px;
-                                    color: black ">Breakfast 
-
-                   
-                                   
-                            </div>
-
-                            <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                            
-                           <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                            <a href="#popup4"  style = "color: black;">
-                                <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                                
-                            </a>
-                           </div>
-                            
-                          
-
-
-                            <div id="popup4" class="overlay">
-                                <div class="popup">
-                                    Modify Your Breakfast Here...
-                                    <a class="close" href="#">&times;</a>
-                                    
-                                </div>
-                            </div>
-                            
-                                    
-                            <div style = "width: 90%;
-                            height: 30%;
-                            background-color: rgb(244, 240, 240);  
-                            margin: 0 auto;
-                            
-                            margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Oatmeal.jpeg" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Peanut Butter Oatmeal
-                                        </div>
-
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
-                                        </div>
-                                        
-                                    </div>
-                            
-                                   
-
-                           </div>
-
-
-                           <div style = "font-family: 'Trebuchet MS';
-                           font-size: 25px;
-                           margin-right: 215px;
-                           margin-top: 10px;
-                           color: black ">Lunch 
-
-          
-                          
-                            </div>
-
-                   <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                   
-                  <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                   <a href="#popup5"  style = "color: black;">
-                       <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                       
-                   </a>
-                  </div>
-                   
-                 
-
-
-                   <div id="popup5" class="overlay">
-                       <div class="popup">
-                           Modify Your Lunch Here...
-                           <a class="close" href="#">&times;</a>
-                           
-                       </div>
-                   </div>
-                   
-                           
-                   <div style = "width: 90%;
-                   height: 30%;
-                   background-color: rgb(244, 240, 240);  
-                   margin: 0 auto;
-                   
-                   margin-top: 10px;"> 
-                          <div style = "padding-top: 0px; margin-left: -210px;">
-                            <img src="Chicken Rice.jpeg" width="72" height="70">
-                               
-                               <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                   Chicken Over Rice
-                               </div>
-
-                               <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                   500 calories
-                               </div>
-                               
-                           </div>
-                   
-                          
-
-                  </div>
-
-
-                  <!-- Dinner -->
-                                    <div style = "font-family: 'Trebuchet MS';
-                                    font-size: 25px;
-                                    margin-right: 208px;
-                                    margin-top: 10px;
-                                    color: black ">Dinner 
-
-                    
-                                    
-                                    </div>
-
-                            <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                            
-                            <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                            <a href="#popup6"  style = "color: black;">
-                                <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                                
-                            </a>
-                            </div>
-                            
-                        
-                            <div id="popup6" class="overlay">
-                                <div class="popup">
-                                    Modify Your Dinner Here...
-                                    <a class="close" href="#">&times;</a>
-                                    
-                                </div>
-                            </div>
-                            
-                                    
-                            <div style = "width: 90%;
-                                        height: 30%;
-                                        background-color: rgb(244, 240, 240);  
-                                        margin: 0 auto;
-                                        
-                                        margin-top: 10px;"> 
-                                     <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Salad.jpeg" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Chicken Ceaser Salad
-                                        </div>
-
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            700 calories
-                                        </div>
-                                        
-                                     </div>
-          
-                 
-
-                         </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            700 calories
                         </div>
-                          
-                          <div id="Wed" class="Button Name" style="display:none">
-                            <div style = "font-family: 'Trebuchet MS';
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div id="Wed" class="Button Name" style="display:none">
+                <div style="font-family: 'Oswald';
                             font-size: 15px;
                             color: black;"><u>Wednesday, October 3</u>
-                            </div>
+                </div>
 
-                            <div style = "font-family: 'Trebuchet MS';
+                <div style="font-family: 'Oswald';
                                     font-size: 25px;
                                     margin-right: 170px;
                                     margin-top: 10px;
-                                    color: black ">Breakfast 
-
-                   
-                                   
-                            </div>
-
-                            <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                            
-                           <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                            <a href="#popup7"  style = "color: black;">
-                                <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                                
-                            </a>
-                           </div>
-                            
-                          
+                                    color: black ">Breakfast
 
 
-                            <div id="popup7" class="overlay">
-                                <div class="popup">
-                                    Modify Your Breakfast Here...
-                                    <a class="close" href="#">&times;</a>
-                                    
-                                </div>
-                            </div>
-                            
-                                    
-                            <div style = "width: 90%;
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup7" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+
+
+                <div id="popup7" class="overlay">
+                    <div class="popup">
+                        Modify Your Breakfast Here...
+                        <a class="close" href="#">&times;</a>
+
+                    </div>
+                </div>
+
+
+                <div style="width: 90%;
                             height: 30%;
                             background-color: rgb(244, 240, 240);  
                             margin: 0 auto;
                             
-                            margin-top: 10px;"> 
-                                    <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Avocado Toast.webp" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Avocado Toast
-                                        </div>
+                            margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Avocado Toast.webp" width="72" height="70">
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            250 calories
-                                        </div>
-                                        
-                                    </div>
-                            
-                                   
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Avocado Toast
+                        </div>
 
-                           </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            250 calories
+                        </div>
+
+                    </div>
 
 
-                           <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <div style="font-family: 'Oswald';
                            font-size: 25px;
                            margin-right: 215px;
                            margin-top: 10px;
-                           color: black ">Lunch 
-
-          
-                          
-                            </div>
-
-                   <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                   
-                  <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                   <a href="#popup8"  style = "color: black;">
-                       <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                       
-                   </a>
-                  </div>
-                   
-                 
+                           color: black ">Lunch
 
 
-                   <div id="popup8" class="overlay">
-                       <div class="popup">
-                           Modify Your Lunch Here...
-                           <a class="close" href="#">&times;</a>
-                           
-                       </div>
-                   </div>
-                   
-                           
-                   <div style = "width: 90%;
+
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup8" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+
+
+                <div id="popup8" class="overlay">
+                    <div class="popup">
+                        Modify Your Lunch Here...
+                        <a class="close" href="#">&times;</a>
+
+                    </div>
+                </div>
+
+
+                <div style="width: 90%;
                    height: 30%;
                    background-color: rgb(244, 240, 240);  
                    margin: 0 auto;
                    
-                   margin-top: 10px;"> 
-                          <div style = "padding-top: 0px; margin-left: -210px;">
-                            <img src="Tuna Sandwich.jpeg" width="72" height="70">
-                               
-                               <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                   Tuna Sandwich
-                               </div>
+                   margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Tuna Sandwich.jpeg" width="72" height="70">
 
-                               <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                   500 calories
-                               </div>
-                               
-                           </div>
-                   
-                          
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Tuna Sandwich
+                        </div>
 
-                  </div>
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            500 calories
+                        </div>
+
+                    </div>
 
 
-                  <!-- Dinner -->
-                                    <div style = "font-family: 'Trebuchet MS';
+
+                </div>
+
+
+                <!-- Dinner -->
+                <div style="font-family: 'Oswald';
                                     font-size: 25px;
                                     margin-right: 208px;
                                     margin-top: 10px;
-                                    color: black ">Dinner 
-                                    
-                                    </div>
+                                    color: black ">Dinner
 
-                            <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
-                            
-                            <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
-                            <a href="#popup9"  style = "color: black;">
-                                <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
-                                
-                            </a>
-                            </div>
-                            
-                        
-                            <div id="popup9" class="overlay">
-                                <div class="popup">
-                                    Modify Your Dinner Here...
-                                    <a class="close" href="#">&times;</a>
-                                    
-                                </div>
-                            </div>
-                            
-                                    
-                            <div style = "width: 90%;
+                </div>
+
+                <!-- <div style = "margin-top: -25px;font-size: 25px; padding-left: 250px;"><i class="fa fa-pencil" ></i></div> -->
+
+                <div style="padding-left: 220px;  font-size: 25px; margin-top: -25px;">
+                    <a href="#popup9" style="color: black;">
+                        <div><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+
+                    </a>
+                </div>
+
+
+                <div id="popup9" class="overlay">
+                    <div class="popup">
+                        Modify Your Dinner Here...
+                        <a class="close" href="#">&times;</a>
+
+                    </div>
+                </div>
+
+
+                <div style="width: 90%;
                                         height: 30%;
                                         background-color: rgb(244, 240, 240);  
                                         margin: 0 auto;
                                         
-                                        margin-top: 10px;"> 
-                                     <div style = "padding-top: 0px; margin-left: -210px;">
-                                        <img src="Pasta.jpeg" width="72" height="70">
-                                        
-                                        <div style = "margin-top: -60px; margin-left: 290px; color: black; font-family: 'Trebuchet MS';">
-                                            Veggie Pasta
-                                        </div>
+                                        margin-top: 10px;">
+                    <div style="padding-top: 0px; margin-left: -210px;">
+                        <img src="Pasta.jpeg" width="72" height="70">
 
-                                        <div style = "margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Trebuchet MS';">
-                                            700 calories
-                                        </div>
-                                        
-                                     </div>
-          
-                 
-
-                         </div>
+                        <div style="margin-top: -60px; margin-left: 290px; color: black; font-family: 'Oswald';">
+                            Veggie Pasta
                         </div>
 
-                   <!-- giberishgibersihgiberish -->
-                   
-                   <!-- scfdgsfdshjfgdjhgdjhs -->
-                    
-                    
-            </div>
-                    
+                        <div
+                            style="margin-bottom: -90px; margin-left: 290px; color: gray; font-family: 'Oswald';">
+                            700 calories
+                        </div>
 
-            <div class="navbar">
-                <a href="../homepage/home.html">
-                    <div class="item">
-                        <div class="icon"><i class="fa fa-fw fa-home"></i></div>
-                        <div class="name">Home</div>
                     </div>
-                    
-                </a>
-                
-                
-                    <div class="item active">
-                        <div class="icon"><i class="fa fa-fw fa-cutlery"></i></div>
-                        <div class="name">Meals</div>
-                    </div>
-                
 
-                <a href="../workoutpage/workout.html">
-                    <div class="item">
-                        <div class="icon"><i class="fa fa-fw fa-heartbeat"></i></div>
-                        <div class="name">Workout</div>
-                    </div>
-                </a>
-                <a href="../medicinepage/medicine.html">
-                    <div class="item">
-                        <div class="icon"><i class="fa fa-medkit"></i></div>
-                        <div class="name">Medicine</div>
-    
-                    </div>
-                </a>
-               
+
+
+                </div>
             </div>
+
+            <!-- giberishgibersihgiberish -->
+
+            <!-- scfdgsfdshjfgdjhgdjhs -->
         </div>
-        
-        
-        <script src="script.js">
 
-        </script>
-    </body>
+        <div class="navbar">
+            <a href="../homepage/home.html">
+                <div class="item">
+                    <div class="icon"><i class="fa fa-fw fa-home"></i></div>
+                    <div class="name">Home</div>
+                </div>
+
+            </a>
+
+
+            <div class="item active">
+                <div class="icon"><i class="fa fa-fw fa-cutlery"></i></div>
+                <div class="name">Meals</div>
+            </div>
+
+
+            <a href="../workoutpage/workout.html">
+                <div class="item">
+                    <div class="icon"><i class="fa fa-fw fa-heartbeat"></i></div>
+                    <div class="name">Workout</div>
+                </div>
+            </a>
+            <a href="../medicinepage/medicine.html">
+                <div class="item">
+                    <div class="icon"><i class="fa fa-medkit"></i></div>
+                    <div class="name">Medicine</div>
+
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+
+    <script src="script.js">
+
+    </script>
+</body>
+
 </html>

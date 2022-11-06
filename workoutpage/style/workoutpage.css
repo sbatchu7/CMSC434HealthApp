@@ -113,11 +113,11 @@ input {
 
 .title {
     position: absolute;
-    color: #363535;
+    color: black;
     font-size: 30px;
     font-family: 'Oswald';
     top: 8px;
-    left: 100px;
+    left: 35%;
 }
 
 .home_icon {
@@ -265,13 +265,11 @@ input {
 }
 
 .reminder {
-    font-family: 'Trebuchet MS';
+    font-family: 'Oswald';
     font-size: 15px;
     color: gray;
     text-align: left;
     padding-left: 8px;
-
-    padding-top: 10px;
 }
 
 #todoButton {
@@ -297,7 +295,7 @@ input {
 }
 
 .info {
-    font-family: 'Trebuchet MS';
+    font-family: 'Oswald';
     font-size: 15px;
     color: gray;
     text-align: left;
